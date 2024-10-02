@@ -25,7 +25,7 @@ Students participating in the project are aware that any code, content, or desig
 ## Student Team
 
 - **Team Leader:** 
-  Josh W.
+  Joshua Jones.
 
 - **Trello Board URL (suggested, but not required):**  
   [Add if available]
