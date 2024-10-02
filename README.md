@@ -10,13 +10,13 @@ The project provides a hub for indie game developers and game-related communitie
 
 ## Ownership and Intellectual Property
 
-While Neumont College Enterprise students contribute to the development of this project, all work completed for the "Games Made in Utah" website is ultimately the intellectual property (IP) of IGDA Utah. 
+While Neumont College Enterprise students contribute to the development of this project, all work completed for the "Games Made In Utah" website is ultimately the intellectual property (IP) of IGDA Utah. 
 Students participating in the project are aware that any code, content, or designs they create as part of this project will be owned by IGDA Utah.
 
 ## Sponsor Details
 
 - **Enterprise Project Sponsor (Company Name):**  
-  IGDA Utah
+  Games Made In Utah - IGDA
 
 - **Sponsor Info (Names, Titles & email addresses of key employees):**  
   - [Sponsor's Name], [Sponsor’s Title], [Sponsor’s Email]  
@@ -24,8 +24,8 @@ Students participating in the project are aware that any code, content, or desig
 
 ## Student Team
 
-- **Team Leader:**  
-  Trevor Hicks, thicks@student.neumont.edu, 385-450-6524
+- **Team Leader:** 
+  Josh W.
 
 - **Trello Board URL (suggested, but not required):**  
   [Add if available]
