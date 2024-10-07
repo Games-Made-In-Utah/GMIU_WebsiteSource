@@ -1,0 +1,21 @@
+{
+  "name": "games-made-in-utah",
+  "version": "1.0.0",
+  "description": "A website showcasing indie games made in Utah.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required.'"
+  },
+  "dependencies": {
+    "serve": "^14.2.3"
+  },
+  "keywords": [
+    "indie",
+    "games",
+    "utah",
+    "website"
+  ],
+  "author": "Trevor Hicks",
+  "license": "ISC"
+}
