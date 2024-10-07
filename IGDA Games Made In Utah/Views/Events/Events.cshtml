@@ -1,0 +1,28 @@
+﻿@model IEnumerable<IGDA_Games_Made_In_Utah.Models.Event>
+
+<div class="container">
+    <h2 class="text-center my-4">Upcoming Events</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            @foreach (var eventItem in Model)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">@eventItem.Name</h4>
+                            <p class="card-text">Date: @eventItem.Date.ToString("MMMM dd, yyyy")</p>
+                            <p class="card-text">Location: @eventItem.Location</p>
+                            <a href="#" class="btn btn-primary">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No upcoming events found.</p>
+    }
+</div>

@@ -6,7 +6,7 @@ namespace IGDA_Games_Made_In_Utah.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("Groups");
         }
     }
 }

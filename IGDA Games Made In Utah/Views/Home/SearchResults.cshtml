@@ -1,0 +1,45 @@
+﻿@model dynamic
+
+<div class="container">
+    <h2 class="text-center my-4">Search Results for "@ViewData["SearchQuery"]"</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Events</h3>
+            @if (Model.Events.Any())
+            {
+                <ul>
+                    @foreach (var eventItem in Model.Events)
+                    {
+                        <li>
+                            <strong>@eventItem.Name</strong> - @eventItem.Date.ToString("MMMM dd, yyyy") (@eventItem.Location)
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No events found.</p>
+            }
+        </div>
+
+        <div class="col-md-6">
+            <h3>Games</h3>
+            @if (Model.Games.Any())
+            {
+                <ul>
+                    @foreach (var game in Model.Games)
+                    {
+                        <li>
+                            <strong>@game.Title</strong> by @game.Developer
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No games found.</p>
+            }
+        </div>
+    </div>
+</div>
