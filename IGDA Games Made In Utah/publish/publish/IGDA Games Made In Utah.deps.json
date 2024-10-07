@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "IGDA Games Made In Utah/1.0.0": {
+        "runtime": {
+          "IGDA Games Made In Utah.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IGDA Games Made In Utah/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
