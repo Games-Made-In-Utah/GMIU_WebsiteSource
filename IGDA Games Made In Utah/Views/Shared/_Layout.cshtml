@@ -14,10 +14,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="@Url.Action("Index", "Home")">
-                    <img src="~/images/New Logo Ideas/RedesigneLogo3-removedbg.png" alt="IGDA Utah" style="height: 80px;">
+                    <img src="~/images/GMIUlogo.png" alt="IGDA Utah" style="height: 90px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,20 +34,19 @@
                             <a class="nav-link" asp-controller="Groups" asp-action="Index">Groups</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Events" asp-action="Index">Events</a> <!-- Updated Here -->
+                            <a class="nav-link" asp-controller="Events" asp-action="Index">Upcomming</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Resources" asp-action="Index">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
+                            <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact Us</a>
                         </li>
                     </ul>
 
-                    <!-- Search Form -->
                     <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Search" method="get">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
-                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -60,21 +59,51 @@
         </main>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">
-                Follow us:
-                <a href="https://www.facebook.com/IGDASLC/">Facebook</a> |
-                <a href="https://x.com/IGDAUtah">X</a>
-            </span>
-            <br>
-            <span>Sign up for our newsletter!</span>
-            <form>
-                <input type="email" placeholder="Enter your email">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-            <br>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    <footer class="footer mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Follow us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.facebook.com/IGDASLC/" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/igdahq/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/IGDAUtah" target="_blank">X (Twitter)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter sign-up -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Newsletter</h5>
+                    <p>Sign up for our newsletter!</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -83,4 +112,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

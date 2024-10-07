@@ -1,9 +1,9 @@
-/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    transition: background-color 0.5s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,42 +17,51 @@ p {
 
 /* Jumbotron / Hero Section */
 .jumbotron {
-    background-color: #f8f9fa;
+    background: linear-gradient(to bottom, #050368, #f9f9f9);
+    color: white;
     padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
     .jumbotron h1 {
-        font-size: 3rem;
-        color: #333;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: white;
     }
 
     .jumbotron h2 {
-        font-size: 1.5rem;
-        color: #007bff;
+        font-size: 1.75rem;
+        color: white;
         margin-top: 10px;
     }
 
     .jumbotron p.lead {
-        font-size: 1.25rem;
-        color: #666;
+        font-size: 1.3rem;
+        color: #fff;
     }
 
     .jumbotron img {
         max-width: 100%;
         height: auto;
         margin-bottom: 20px;
+        border: 5px solid #fff;
+        border-radius: 10px;
     }
 
     .jumbotron a.btn-primary {
         font-size: 1.2rem;
-        padding: 10px 20px;
-        background-color: #f7b500;
-        border-color: #f7b500;
+        padding: 12px 24px;
+        background-color: #ff6a00;
+        border-color: #ff6a00;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
     }
 
 .btn-primary:hover {
-    background-color: #ffc107;
-    border-color: #ffc107;
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive Jumbotron Padding */
@@ -62,24 +71,46 @@ p {
     }
 }
 
-/* Card Styles */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 30px;
+    position: relative;
 }
 
     .card:hover {
         transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     }
+
+.card-body {
+    padding: 20px;
+}
 
 .card-title {
     font-size: 1.5rem;
     font-weight: 600;
 }
 
+.btn-primary {
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+}
+
+    .btn-primary:hover {
+        background-color: #ffc107;
+        border-color: #ff6a00;
+    }
+
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333;
+}
+
 .card-body {
-    padding: 20px;
+    padding: 25px;
 }
 
 .card-text {
@@ -88,13 +119,14 @@ p {
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
+    background-color: #1e1e1e;
     color: white;
     padding: 20px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
     footer a {
-        color: #ffc107;
+        color: #f7b500;
         text-decoration: none;
     }
 
@@ -104,32 +136,28 @@ footer {
         }
 
     footer .form-inline input[type="email"] {
-        padding: 5px;
+        padding: 10px;
+        border-radius: 5px;
         margin-right: 10px;
     }
 
     footer .form-inline button {
-        padding: 5px 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
     }
 
 /* Navbar Styling */
 .navbar {
     font-family: 'Montserrat', sans-serif;
-    background-color: #1e1e1e;
+    background-color: #3c05c6;
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-    /* Center navbar items */
-    .navbar .navbar-nav {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #f7b500;
+    color: #00ff21;
     transition: color 0.3s ease;
 }
 
@@ -146,7 +174,7 @@ footer {
 }
 
     .navbar-nav .nav-link:hover {
-        color: #f7b500;
+        color: #00ff21;
         transform: scale(1.1);
         text-decoration: none;
     }
@@ -156,17 +184,5 @@ footer {
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28247, 181, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28247, 181, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
-.btn-outline-warning {
-    font-family: 'Montserrat', sans-serif;
-    color: #f7b500;
-    border-color: #f7b500;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-    .btn-outline-warning:hover {
-        background-color: #f7b500;
-        color: #fff;
-    }
