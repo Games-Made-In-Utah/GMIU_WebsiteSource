@@ -19,16 +19,15 @@ Students participating in the project are aware that any code, content, or desig
   Games Made In Utah - IGDA
 
 - **Sponsor Info (Names, Titles & email addresses of key employees):**  
-  - [Sponsor's Name], [Sponsor’s Title], [Sponsor’s Email]  
-  (Fill in the exact names and emails as provided.)
+  - Josh Jones, President, vazor222@gmail.com
 
 ## Student Team
 
 - **Team Leader:** 
-  Joshua Jones.
+  Josh Jones
 
 - **Trello Board URL (suggested, but not required):**  
-  [Add if available]
+  [https://github.com/orgs/Games-Made-In-Utah/projects/2/views/1]
 
 ## Guidelines
 
