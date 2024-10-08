@@ -2,26 +2,35 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Meta tags for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and CSS Links -->
     <title>@ViewData["Title"] - IGDA_Games_Made_In_Utah</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/IGDA_Games_Made_In_Utah.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="@Url.Action("Index", "Home")">
                     <img src="~/images/GMIUlogo.png" alt="IGDA Utah" style="height: 90px;">
                 </a>
+
+                <!-- Toggle button for mobile -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -44,6 +53,7 @@
                         </li>
                     </ul>
 
+                    <!-- Search Form -->
                     <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Search" method="get">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
@@ -53,53 +63,50 @@
         </nav>
     </header>
 
+    <!-- Main Content Area -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer mt-5">
+    <!-- Footer -->
+    <footer class="footer mt-5 bg-dark text-white">
         <div class="container text-center text-md-left">
             <div class="row">
+                <!-- Follow us section -->
                 <div class="col-md-4">
                     <h5 class="text-uppercase">Follow us</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.facebook.com/IGDASLC/" target="_blank">Facebook</a>
+                            <a href="https://www.facebook.com/IGDASLC/" target="_blank" class="text-warning">Facebook</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/igdahq/" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/igdahq/" target="_blank" class="text-warning">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://x.com/IGDAUtah" target="_blank">X (Twitter)</a>
+                            <a href="https://x.com/IGDAUtah" target="_blank" class="text-warning">X (Twitter)</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Newsletter sign-up -->
                 <div class="col-md-4">
-                    <h5 class="text-uppercase">Newsletter</h5>
-                    <p>Sign up for our newsletter!</p>
-                    <form>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary">Subscribe</button>
-                            </div>
+                    <h5 class="text-uppercase">Subscribe to our newsletter</h5>
+                    <form method="post" action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
                         </div>
+                        <button type="submit" class="btn btn-warning btn-block">Subscribe</button>
                     </form>
                 </div>
 
-                <!-- Links -->
+                <!-- Contact info -->
                 <div class="col-md-4">
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase">Contact Us</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms of Service</a>
+                            <a href="mailto:info@igdautah.com" class="text-warning">info@igdautah.com</a>
                         </li>
                     </ul>
                 </div>
@@ -107,10 +114,11 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>
