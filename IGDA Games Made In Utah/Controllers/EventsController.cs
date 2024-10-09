@@ -1,27 +1,28 @@
-﻿using IGDA_Games_Made_In_Utah.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using IGDA_Games_Made_In_Utah.Models;
+using IGDAGamesMadeInUtah.Services;
+using System.Threading.Tasks;
 
-public class EventsController : Controller
+namespace IGDAGamesMadeInUtah.Controllers
 {
-    private readonly List<Event> _events;
-
-    public EventsController()
+    public class EventsController : Controller
     {
-        // Initialize sample events
-        _events = new List<Event>
+        private readonly IEventScraper _eventScraper;
+
+        // Inject the EventScraper service
+        public EventsController(IEventScraper eventScraper)
         {
-            new Event { Name = "ICE: The 3D Environment Conference", Date = new DateTime(2024, 10, 1), Location = "Online" },
-            new Event { Name = "Game Development Meetup", Date = new DateTime(2024, 10, 10), Location = "Salt Lake City" },
-            new Event { Name = "GameSoundCon", Date = new DateTime(2024, 10, 29), Location = "Burbank, CA" },
-            new Event { Name = "GDEX", Date = new DateTime(2024, 10, 24), Location = "Midwest, USA" }
-        };
-    }
+            _eventScraper = eventScraper;
+        }
 
-    // Action to show all upcoming events
-    public IActionResult Index()
-    {
-        var upcomingEvents = _events.Where(e => e.Date >= DateTime.Now).ToList();
-        return View("Events", upcomingEvents);
-        // This returns the view named 'Index.cshtml' in Views/Events
+        // Index action that scrapes the events and passes them to the view
+        public async Task<IActionResult> Index()
+        {
+            // Call the EventScraper to get the list of events
+            var events = await _eventScraper.ScrapeEvents();
+
+            // Pass the events data to the View
+            return View(events);
+        }
     }
 }

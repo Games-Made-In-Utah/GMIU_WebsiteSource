@@ -1,3 +1,5 @@
+using IGDAGamesMadeInUtah.Services;
+
 namespace IGDA_Games_Made_In_Utah
 {
     public class Program
@@ -8,6 +10,9 @@ namespace IGDA_Games_Made_In_Utah
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Register the EventScraper service
+            builder.Services.AddScoped<IEventScraper, EventScraper>();
 
             var app = builder.Build();
 

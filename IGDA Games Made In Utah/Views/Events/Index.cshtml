@@ -1,0 +1,30 @@
+﻿@model IEnumerable<IGDA_Games_Made_In_Utah.Models.Events>
+
+
+@{
+    ViewData["Title"] = "Upcoming Events";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Upcoming Events</h1>
+    <div class="row">
+        @foreach (var eventItem in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <!-- Display event image -->
+                    <div class="card-img-top" style="background-image: url('@eventItem.ImageUrl'); background-size: cover; height: 200px;"></div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">@eventItem.Title</h5>
+                        <p class="card-text">
+                            <strong>Date:</strong> @eventItem.Day @eventItem.MonthYear<br />
+                            <strong>Description:</strong> @eventItem.Description
+                        </p>
+                        <a href="@eventItem.Link" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
