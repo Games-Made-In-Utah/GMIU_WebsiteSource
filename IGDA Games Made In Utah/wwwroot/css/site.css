@@ -102,7 +102,6 @@ p {
         border-color: #ff6a00;
     }
 
-
 .card-title {
     font-size: 1.7rem;
     font-weight: bold;
@@ -185,4 +184,24 @@ footer {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28247, 181, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Additional responsive fixes */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .jumbotron {
+        padding: 30px 10px;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    h2.h4 {
+        font-size: 1.25rem;
+    }
 }
