@@ -4,26 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page - IGDA_Games_Made_In_Utah</title>
-
-    <!-- Particles.js -->
+    <title>Privacy Policy - IGDA_Games_Made_In_Utah</title>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css?v=lApvc_-2LKYqAufHyPYG7st7DSS3BGVFqkV2tA4AQ44" />
+    <link rel="stylesheet" href="/css/site.css?v=3w1ePZmT-5dE60NFotUeZfYGss-ysi2cRj1dC0XBbds" />
     <link rel="stylesheet" href="/IGDA_Games_Made_In_Utah.styles.css" />
 </head>
 
 <body>
-    <div b-7yscnshm1s id="particles-js"></div> <!-- Particles.js background -->
-
+    <div b-7yscnshm1s id="particles-js"></div>
     <header b-7yscnshm1s>
-        <nav b-7yscnshm1s class="navbar navbar-expand-lg navbar-dark">
+        <nav b-7yscnshm1s class="navbar navbar-expand-lg navbar-dark";">
             <div b-7yscnshm1s class="container">
                 <a b-7yscnshm1s class="navbar-brand" href="/">
                     <img src="/images/GMIUlogo.png" alt="IGDA Utah" style="height: 90px;">
@@ -65,17 +58,42 @@
     <div b-7yscnshm1s class="container">
         <main b-7yscnshm1s role="main" class="pb-3">
             
-<div class="jumbotron text-center">
-    <img src="/images/Splashimage.png" alt="Splash Image" class="img-fluid mb-4">
+<div class="container my-5">
+    <h1 class="text-center mb-4">Privacy Policy</h1>
 
-    <h1 class="display-4">Explore Our Games Made in Utah</h1>
-    <h2 class="h2">Showcasing the best of local game developers in Utah</h2>
+    <p class="lead">
+        Your privacy is important to us. This privacy statement explains the personal data Games Made In Utah processes, how we process it, and for what purposes.
+    </p>
 
-    <hr class="my-4">
+    <h2>1. Information We Collect</h2>
+    <p>
+        We collect personal information that you provide to us directly, such as when you sign up for our newsletter or when you contact us directly through the website. The data we collect may include your name, email address, and any other information you choose to provide.
+    </p>
 
-    <p class="h4">Learn More About the Amazing Games </p>
-    <p class="h4">Created By Local Utah Indie Developers.</p>
-    <a class="btn btn-primary btn-lg" href="/Indies" role="button">Click Here To See Our Current Developers! </a>
+    <h2>2. How We Use Your Information</h2>
+    <p>
+        The information we collect is used to improve our website, provide newsletters or other services that users may opt into, and communicate with you about our offerings and updates.
+    </p>
+
+    <h2>3. Sharing Information</h2>
+    <p>
+        We do not share your personal data with third parties, except when required by law or necessary to provide services you've requested.
+    </p>
+
+    <h2>4. Security</h2>
+    <p>
+        We take reasonable precautions to ensure the security of your personal information. However, no method of transmission over the Internet is completely secure.
+    </p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>
+        We may update this privacy policy from time to time. Any changes will be reflected on this page.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>
+        If you have any questions about this Privacy Policy, please contact us.
+    </p> 
 </div>
 
         </main>
@@ -95,87 +113,44 @@
                 </div>
 
                 <!-- Newsletter sign-up -->
-                <div b-7yscnshm1s class="col-md-4 newsletter">
+                <div b-7yscnshm1s class="col-md-4">
                     <h5 b-7yscnshm1s class="text-uppercase">Newsletter</h5>
                     <p b-7yscnshm1s>Sign up for our newsletter!</p>
-                    <form id="subscribeForm" class="form-inline justify-content-center">
-                        <div b-7yscnshm1s class="input-group" style="max-width: 300px;">
-                            <input b-7yscnshm1s type="email" id="emailInput" class="form-control" placeholder="Enter your email" required>
+                    <form class="form-inline">
+                        <div b-7yscnshm1s class="input-group">
+                            <input b-7yscnshm1s type="email" class="form-control" placeholder="Enter your email">
                             <div b-7yscnshm1s class="input-group-append">
                                 <button b-7yscnshm1s type="submit" class="btn btn-primary">Subscribe</button>
                             </div>
                         </div>
                     </form>
-                    <p b-7yscnshm1s id="subscribeMessage"></p>
                 </div>
-
-
-
-                <script>
-                    // JavaScript to handle form submission
-                    document.getElementById('subscribeForm').addEventListener('submit', async function (e) {
-                        e.preventDefault();  // Prevent the default form submit
-
-                        const email = document.getElementById('emailInput').value;
-                        const messageContainer = document.getElementById('subscribeMessage');
-
-                        try {
-                            // Send the email via AJAX to the server
-                            const response = await fetch('/Newsletter/Subscribe', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ email: email })
-                            });
-
-                            const result = await response.json();
-
-                            // Display success or error message
-                            if (result.success) {
-                                messageContainer.style.color = 'green';
-                                messageContainer.textContent = result.message;  // Success message from server
-                            } else {
-                                messageContainer.style.color = 'red';
-                                messageContainer.textContent = result.message;  // Error message from server
-                            }
-                        } catch (error) {
-                            messageContainer.style.color = 'red';
-                            messageContainer.textContent = "There was an error processing your request.";
-                        }
-                    });
-                </script>
 
                 <!-- Privacy and Terms Section -->
                 <div b-7yscnshm1s class="col-md-4">
                     <h5 b-7yscnshm1s class="text-uppercase">Links</h5>
                     <ul b-7yscnshm1s class="list-unstyled">
                         <li b-7yscnshm1s><a b-7yscnshm1s href="/Home/PrivacyPolicy">Privacy Policy</a></li>
-                        <li b-7yscnshm1s><a b-7yscnshm1s href="/Home/TermsOfService">Terms of Service</a></li>
+                        <li b-7yscnshm1s><a b-7yscnshm1s href="#">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Copyright Information -->
             <div b-7yscnshm1s class="copyright">
-                <p b-7yscnshm1s>© Created By Trevor Hicks, 2024 Games Made In Utah. All Rights Reserved.</p>
+                <p b-7yscnshm1s>© 2024 Games Made In Utah. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JS Libraries -->
+
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/site.js?v=5EmgY8b8CJB_oMHaab0-tEHkHShVios55XdpRgtC9zs"></script>
-
-    <!-- Initialize Particles.js -->
-    <script>
-        particlesJS.load('particles-js', '~/js/particles.json', function () {
-            console.log('Particles.js config loaded');
-        });
-    </script>
-
+    <script src="/js/site.js?v=ao8z6wSQ4S94l_WO9uj2kE77UovfKmPB-1ZhyXeNGlw"></script>
 
 <!-- Visual Studio Browser Link -->
-<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="3e43fef16c794e6cb4fbbd1342bc13e2" data-requestMappingFromServer="false" data-connectUrl="http://localhost:51907/338de52493624d449286f4982805e5ee/browserLink"></script>
+<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="ba91d54e224441c8859320da3007b364" data-requestMappingFromServer="false" data-connectUrl="http://localhost:50396/338de52493624d449286f4982805e5ee/browserLink"></script>
 <!-- End Browser Link -->
 <script src="/_framework/aspnetcore-browser-refresh.js"></script></body>
+
 </html>

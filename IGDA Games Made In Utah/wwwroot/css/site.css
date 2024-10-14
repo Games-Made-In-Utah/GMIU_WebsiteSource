@@ -225,4 +225,118 @@ footer {
     h2.h4 {
         font-size: 1.25rem;
     }
+    /* Footer Styles with Copyright */
+    footer {
+        background-color: #2C3531; /* Dark Olive background */
+        color: #D1E8E2; /* Mint text */
+        padding: 20px 0;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: fadeInUp 1s ease-out;
+    }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #D9B08C; /* Sand color for text */
+        }
+
+        footer a {
+            color: #33B2FF; /* Electric Blue for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            footer a:hover {
+                color: #1C6B8E; /* Darker blue for hover effect */
+                text-decoration: underline;
+            }
+
+    /* Copyright Section */
+    .copyright {
+        font-size: 0.85rem;
+        color: #FFCB9A; /* Peach color for copyright */
+        margin-top: 10px;
+    }
+
+    footer .form-inline input[type="email"] {
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        border: 1px solid #FFCB9A; /* Peach border */
+        background-color: #D1E8E2; /* Mint background */
+        color: #2C3531; /* Dark Olive text */
+    }
+
+    footer .form-inline button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #33B2FF; /* Electric Blue button */
+        color: #FFFFFF; /* White text */
+        border: none;
+        box-shadow: 0 0 10px rgba(51, 178, 255, 0.6);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        footer .form-inline button:hover {
+            background-color: #1C6B8E; /* Darker blue on hover */
+            box-shadow: 0 0 20px rgba(28, 107, 142, 0.6);
+        }
+
+    /* Responsive Footer Fixes */
+    @media (max-width: 768px) {
+        footer {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .copyright {
+            margin-top: 5px;
+        }
+    }
+
+    .newsletter {
+        margin-top: 10px;
+    }
+
+        .newsletter .input-group {
+            width: 100%;
+            max-width: 280px; /* Reduce the max width to make it smaller */
+            margin: 10px auto;
+        }
+
+        .newsletter input[type="email"] {
+            width: 100%;
+            padding: 6px 10px; /* Adjust padding to reduce the size */
+            font-size: 0.9rem;
+            border: 1px solid #FFCB9A; /* Peach border for input */
+            border-radius: 4px;
+            background-color: #D1E8E2; /* Mint background */
+            color: #2C3531; /* Dark Olive text */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            outline: none;
+        }
+
+            .newsletter input[type="email"]:focus {
+                border-color: #33B2FF; /* Electric Blue focus */
+                box-shadow: 0 4px 8px rgba(51, 178, 255, 0.4);
+            }
+
+        .newsletter .btn-primary {
+            background-color: #33B2FF; /* Electric Blue button */
+            color: white;
+            padding: 6px 16px; /* Reduced padding for a cleaner look */
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 8px;
+        }
+
+            .newsletter .btn-primary:hover {
+                background-color: #1C6B8E; /* Darker Blue on hover */
+                box-shadow: 0 4px 8px rgba(28, 107, 142, 0.4);
+            }
 }

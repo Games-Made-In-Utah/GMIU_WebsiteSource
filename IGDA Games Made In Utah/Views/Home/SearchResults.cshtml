@@ -1,45 +1,37 @@
-﻿@model dynamic
+﻿@model List<(string Developer, string Game, string ImageUrl)>
 
-<div class="container">
-    <h2 class="text-center my-4">Search Results for "@ViewData["SearchQuery"]"</h2>
+@{
+    ViewData["Title"] = "Search Results";
+}
 
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Events</h3>
-            @if (Model.Events.Any())
+<div class="container mt-5">
+    <h1>Search Results</h1>
+
+    @if (Model == null || !Model.Any())
+
+    {
+        <p>No results found for your search.</p>
+    }
+
+    else
+
+    {
+        <p>Showing results for your search:</p>
+
+        <div class="row">
+            @foreach (var result in Model)
+
             {
-                <ul>
-                    @foreach (var eventItem in Model.Events)
-                    {
-                        <li>
-                            <strong>@eventItem.Name</strong> - @eventItem.Date.ToString("MMMM dd, yyyy") (@eventItem.Location)
-                        </li>
-                    }
-                </ul>
-            }
-            else
-            {
-                <p>No events found.</p>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="@result.ImageUrl" class="card-img-top" alt="@result.Game">
+                        <div class="card-body">
+                            <h5 class="card-title">@result.Developer</h5>
+                            <p class="card-text">Game: @result.Game</p>
+                        </div>
+                    </div>
+                </div>
             }
         </div>
-
-        <div class="col-md-6">
-            <h3>Games</h3>
-            @if (Model.Games.Any())
-            {
-                <ul>
-                    @foreach (var game in Model.Games)
-                    {
-                        <li>
-                            <strong>@game.Title</strong> by @game.Developer
-                        </li>
-                    }
-                </ul>
-            }
-            else
-            {
-                <p>No games found.</p>
-            }
-        </div>
-    </div>
+    }
 </div>
