@@ -1,42 +1,96 @@
-# Neumont Enterprise Project
+# IGDA Games Made in Utah Website
 
-Neumont College Enterprise Students are working on the "Games Made in Utah" website project for IGDA Utah. 
-The project involves developing and maintaining a website that showcases indie game developers and local chapter-adjacent groups in Utah. 
+## Overview
 
-## Project Overview
+This project is the IGDA Games Made in Utah website, built with ASP.NET Core MVC and deployed on Netlify. It features community-driven content about indie games developed in Utah and provides users with event information and resources for local game developers.
 
-The project provides a hub for indie game developers and game-related communities in Utah to promote their work and collaborate.
- Neumont students are responsible for designing, developing, and implementing features as assigned by the project sponsor.
+## Features
 
-## Ownership and Intellectual Property
+- **Event Scraping**: Automatically fetches and displays upcoming events from IGDA.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Custom Styles**: Includes custom styling using a color palette, animations, and hover effects.
+  
+## Requirements
 
-While Neumont College Enterprise students contribute to the development of this project, all work completed for the "Games Made In Utah" website is ultimately the intellectual property (IP) of IGDA Utah. 
-Students participating in the project are aware that any code, content, or designs they create as part of this project will be owned by IGDA Utah.
+- .NET SDK (6.0 LTS or later)
+- Visual Studio or VSCode (with C# support)
+- Node.js (if any frontend dependencies are needed)
+- A Netlify account for deployment
 
-## Sponsor Details
+## Folder Structure
 
-- **Enterprise Project Sponsor (Company Name):**  
-  Games Made In Utah - IGDA
+Ensure the following files and folders are included in the output folder before deploying:
 
-- **Sponsor Info (Names, Titles & email addresses of key employees):**  
-  - Josh Jones, President, vazor222@gmail.com
+- **Views/Converted HTML**: Make sure all `.cshtml` views are converted to `.html` files. 
+- **Static Assets**: Include `wwwroot/` for all static assets such as images, CSS, and JavaScript files.
+- **Events Scraper Code**: The backend scraping functionality should be included as well.
+- **Site CSS**: Ensure the custom `site.css` is updated based on the new color palette and layout modifications.
 
-## Student Team
+## Setup Instructions
 
-- **Team Leader:** 
-  Josh Jones
+### Step 1: Clone the Repository
 
-- **Trello Board URL (suggested, but not required):**  
-  [https://github.com/orgs/Games-Made-In-Utah/projects/2/views/1]
+1. Clone the project repository from GitHub:
 
-## Guidelines
+   ```bash
+   git clone https://github.com/YourUsername/IGDA-Games-Made-In-Utah.git
+   cd IGDA-Games-Made-In-Utah
+   ```
 
-Students working on this project are expected to:
-- Follow the design and project requirements provided by IGDA Utah.
-- Maintain clear communication with the sponsor regarding progress and challenges.
-- Adhere to deadlines and milestones as outlined by the project sponsor.
+### Step 2: Configure the Project
 
-## License
+1. Ensure your `EventsController.cs`, `HomeController.cs`, and `EventScraper` logic are correctly implemented. Follow the structure we’ve defined earlier.
+2. Add all converted views to the `Views` folder, making sure they are `.html` files instead of `.cshtml`.
+3. If you haven't already, include the `wwwroot/` directory for any static files (CSS, JS, Images).
 
-The code and designs created for this project are under the ownership of IGDA Utah. Neumont College students are working under a limited, non-transferable license for educational purposes only.
+### Step 3: Build the Project Locally
+
+1. If you're running the ASP.NET Core project locally, build it using the following:
+
+   ```bash
+   dotnet build
+   dotnet run
+   ```
+
+### Step 4: Prepare for Deployment to Netlify
+
+1. **Ensure All Files Are in the Output Folder**: The following need to be present in the output folder:
+   - All `.html` files converted from `.cshtml`.
+   - `wwwroot` for all static assets (CSS, images, etc.).
+   - Necessary configurations for the site.
+   
+2. **Add a `_redirects` File (Optional)**: If your project uses routing and you need to handle any redirects, create a `_redirects` file and place it in the root of your output folder.
+
+### Step 5: Deploy to Netlify
+
+1. Go to [Netlify](https://netlify.app) and sign in or create an account.
+2. Create a new site by clicking the “New Site from Git” button.
+3. Select your GitHub repository where the project is stored.
+4. In the **Build Settings**:
+   - Build command: None (or `npm run build` if using Node for any frontend work).
+   - Publish directory: Point to your output folder containing the converted `.html` files and the `wwwroot/` directory.
+
+5. Click "Deploy Site" and wait for the process to complete.
+
+### Step 6: Verify Deployment
+
+Once deployed, navigate to your Netlify URL (which will be provided during deployment) to verify that the website is functioning correctly, including:
+
+- Proper rendering of events.
+- Fully responsive navigation and design.
+- Links working as expected.
+
+### Optional Step: Add Custom Domain
+
+1. In your Netlify dashboard, go to **Domain settings**.
+2. Add a custom domain if you have one and follow the DNS instructions provided.
+
+## Credits
+
+- Project by Trevor Hicks (IGDA Utah)
+- Event scraping logic based on the `IGDA.org` events page.
+  
+## Contact
+
+If you encounter issues or have questions about setup or contributions, feel free to open an issue or reach out.
 
