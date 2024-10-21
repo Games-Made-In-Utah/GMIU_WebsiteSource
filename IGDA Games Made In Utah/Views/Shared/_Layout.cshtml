@@ -52,10 +52,11 @@
                             <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Search" method="get">
+                    <form class="form-inline my-2 my-lg-0" action="/SearchResults.html" method="get">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                     </form>
+
 
                 </div>
             </div>
@@ -133,8 +134,8 @@
                 <div class="col-md-4">
                     <h5 class="text-uppercase">Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="@Url.Action("PrivacyPolicy", "Home")">Privacy Policy</a></li>
-                        <li><a href="@Url.Action("TermsOfService", "Home")">Terms of Service</a></li>
+                        <li><a href="@Url.Action("PrivacyPolicy")">Privacy Policy</a></li>
+                        <li><a href="@Url.Action("TermsOfService")">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
