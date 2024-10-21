@@ -1,0 +1,6 @@
+[build]
+  functions = "netlify/functions"
+  publish = "public" # where the static files are stored for deployment
+
+[functions]
+  directory = "netlify/functions"
