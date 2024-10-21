@@ -225,29 +225,39 @@ footer {
     h2.h4 {
         font-size: 1.25rem;
     }
-
     /* Footer Styles with Copyright */
     footer {
+        background-color: #2C3531; /* Dark Olive background */
+        color: #D1E8E2; /* Mint text */
+        padding: 20px 0;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
         text-align: center;
-        padding: 15px 0;
+        animation: fadeInUp 1s ease-out;
     }
 
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #D9B08C; /* Sand color for text */
+        }
+
+        footer a {
+            color: #33B2FF; /* Electric Blue for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            footer a:hover {
+                color: #1C6B8E; /* Darker blue for hover effect */
+                text-decoration: underline;
+            }
+
+    /* Copyright Section */
     .copyright {
-        margin-top: 5px;
         font-size: 0.85rem;
         color: #FFCB9A; /* Peach color for copyright */
+        margin-top: 10px;
     }
-
-    footer a {
-        color: #33B2FF; /* Electric Blue for links */
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-        footer a:hover {
-            color: #1C6B8E; /* Darker blue for hover effect */
-            text-decoration: underline;
-        }
 
     footer .form-inline input[type="email"] {
         padding: 10px;
@@ -270,8 +280,7 @@ footer {
 
         footer .form-inline button:hover {
             background-color: #1C6B8E; /* Darker blue on hover */
-            box-shadow: 0 0 20px rgba(28, 107, 
-            142, 0.6);
+            box-shadow: 0 0 20px rgba(28, 107, 142, 0.6);
         }
 
     /* Responsive Footer Fixes */
@@ -283,35 +292,51 @@ footer {
 
         .copyright {
             margin-top: 5px;
-            font-size: 0.85rem;
+        }
+    }
+
+    .newsletter {
+        margin-top: 10px;
+    }
+
+        .newsletter .input-group {
+            width: 100%;
+            max-width: 280px; /* Reduce the max width to make it smaller */
+            margin: 10px auto;
         }
 
-        footer .form-inline {
-            justify-content: center; /* Align the form in the center */
-            margin-top: 10px;
-        }
-
-        footer .form-inline input[type="email"] {
-            width: 100%; /* Make email input field 100% wide */
-            max-width: 300px; /* Set max-width for responsiveness */
-            padding: 8px 10px; /* Reduce padding */
-        }
-
-        footer .form-inline button {
-            width: auto; /* Ensure button does not stretch */
-            padding: 8px 12px; /* Adjust padding */
+        .newsletter input[type="email"] {
+            width: 100%;
+            padding: 6px 10px; /* Adjust padding to reduce the size */
             font-size: 0.9rem;
+            border: 1px solid #FFCB9A; /* Peach border for input */
+            border-radius: 4px;
+            background-color: #D1E8E2; /* Mint background */
+            color: #2C3531; /* Dark Olive text */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            outline: none;
         }
 
-        footer .form-inline button:hover {
-            background-color: #1C6B8E;
-        }
-    }
+            .newsletter input[type="email"]:focus {
+                border-color: #33B2FF; /* Electric Blue focus */
+                box-shadow: 0 4px 8px rgba(51, 178, 255, 0.4);
+            }
 
-    /* Error message styling */
-    .newsletter #subscribeMessage {
-        font-size: 0.85rem; /* Smaller font for the error message */
-        color: red;
-        margin-top: 8px;
-    }
+        .newsletter .btn-primary {
+            background-color: #33B2FF; /* Electric Blue button */
+            color: white;
+            padding: 6px 16px; /* Reduced padding for a cleaner look */
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 8px;
+        }
+
+            .newsletter .btn-primary:hover {
+                background-color: #1C6B8E; /* Darker Blue on hover */
+                box-shadow: 0 4px 8px rgba(28, 107, 142, 0.4);
+            }
 }

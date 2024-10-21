@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service - IGDA_Games_Made_In_Utah</title>
+    <title> - IGDA_Games_Made_In_Utah</title>
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -69,25 +69,60 @@
         <main b-7yscnshm1s role="main" class="pb-3">
             
 <div class="container mt-5">
-    <h1>Terms of Service</h1>
-    <p>Last updated: 10/21/2024</p>
+    <h1>Create New Game Jam</h1>
 
-    <h2>1. Introduction</h2>
-    <p>Welcome to Games Made In Utah. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.</p>
+    <form method="post" enctype="multipart/form-data" action="/GameJams/Create">
+        <div class="form-group">
+            <label for="Title">Game Jam Title</label>
+            <input type="text" class="form-control" id="Title" data-val="true" data-val-required="The Title field is required." name="Title" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+        </div>
 
-    <h2>2. Intellectual Property</h2>
-    <p>All content, including but not limited to text, images, and logos on this website, are the property of Games Made In Utah, unless otherwise stated.</p>
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <textarea class="form-control" id="Description" data-val="true" data-val-required="The Description field is required." name="Description">
+</textarea>
+            <span class="text-danger field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+        </div>
 
-    <h2>3. User Responsibilities</h2>
-    <p>You agree not to use this site for any unlawful purpose or in any way that could damage, disable, overburden, or impair it.</p>
+        <div class="form-group">
+            <label for="Host">Host</label>
+            <input type="text" class="form-control" id="Host" data-val="true" data-val-required="The Host field is required." name="Host" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="Host" data-valmsg-replace="true"></span>
+        </div>
 
-    <h2>4. Changes to the Terms</h2>
-    <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon being posted on the site.</p>
+        <div class="form-group">
+            <label for="StartDate">Start Date</label>
+            <input type="datetime-local" class="form-control" id="StartDate" data-val="true" data-val-required="The StartDate field is required." name="StartDate" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="StartDate" data-valmsg-replace="true"></span>
+        </div>
 
-    <h2>5. Contact Information</h2>
-    <p>If you have any questions about these Terms of Service, please contact us at vazor222@gmail.com </p>
+        <div class="form-group">
+            <label for="EndDate">End Date</label>
+            <input type="datetime-local" class="form-control" id="EndDate" data-val="true" data-val-required="The EndDate field is required." name="EndDate" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="EndDate" data-valmsg-replace="true"></span>
+        </div>
 
-    <p><strong>Thank you for visiting Games Made In Utah!</strong></p>
+        <div class="form-group">
+            <label for="VotingEndDate">Voting End Date (Optional)</label>
+            <input type="datetime-local" class="form-control" id="VotingEndDate" name="VotingEndDate" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="VotingEndDate" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="ImageUrl">Game Jam Image URL</label>
+            <input type="text" class="form-control" id="ImageUrl" data-val="true" data-val-required="The ImageUrl field is required." name="ImageUrl" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="ImageUrl" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Link">Game Jam Link</label>
+            <input type="text" class="form-control" id="Link" data-val="true" data-val-required="The Link field is required." name="Link" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="Link" data-valmsg-replace="true"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create Game Jam</button>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GIi_n7_HvhCjB2jHRAr_-Zu71iZ9X97ePGS6GESvJf4Kj6fpLg2qHvqJxjJEkaWTP6LaWd8uq9hKkPurtEv86oXftub_2Y2BMN4ICqriPWZxeFQz1KtcmDrbXV-FcnucyHJVMtv8VNr6g_qXHX6sCA" /></form>
 </div>
 
         </main>
@@ -158,8 +193,8 @@
                 <div b-7yscnshm1s class="col-md-4">
                     <h5 b-7yscnshm1s class="text-uppercase">Links</h5>
                     <ul b-7yscnshm1s class="list-unstyled">
-                        <li b-7yscnshm1s><a b-7yscnshm1s href="/Home/PrivacyPolicy">Privacy Policy</a></li>
-                        <li b-7yscnshm1s><a b-7yscnshm1s href="/Home/TermsOfService">Terms of Service</a></li>
+                        <li b-7yscnshm1s><a b-7yscnshm1s href="/GameJams/PrivacyPolicy">Privacy Policy</a></li>
+                        <li b-7yscnshm1s><a b-7yscnshm1s href="/GameJams/TermsOfService">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -185,7 +220,7 @@
 
 
 <!-- Visual Studio Browser Link -->
-<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="89eda6ef15354863ae6af4d410384dc4" data-requestMappingFromServer="false" data-connectUrl="http://localhost:50811/37f507fab7044aac9eb15246a54690e2/browserLink"></script>
+<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="9250686487744a918e18acd3d4ad9afe" data-requestMappingFromServer="false" data-connectUrl="http://localhost:50811/37f507fab7044aac9eb15246a54690e2/browserLink"></script>
 <!-- End Browser Link -->
 <script src="/_framework/aspnetcore-browser-refresh.js"></script></body>
 </html>

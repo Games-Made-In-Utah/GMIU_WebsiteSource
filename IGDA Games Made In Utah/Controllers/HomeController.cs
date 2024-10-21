@@ -43,7 +43,7 @@ namespace IGDAGamesMadeInUtah.Controllers
             ("Lotus Mountain Creative", "Narcalid", "~/images/LotusMtn.png"),
             ("D20 Studios", "Abalon", "~/images/abalon.png"),
             ("Craft Lake City", "Craft Lake City", "~/images/craft_lake_city.png"),
-            ("Justin Whitchurch", "Table Top Creature Tracker", "~/images/TableTopCreatureTracker.png")
+            ("Justin W.", "Table Top Creature Tracker", "~/images/TableTopCreatureTracker.png")
         };
 
         [HttpGet]

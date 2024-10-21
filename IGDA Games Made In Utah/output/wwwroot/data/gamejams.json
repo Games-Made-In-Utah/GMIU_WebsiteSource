@@ -1,0 +1,15 @@
+{
+  "gameJams": [
+    {
+      "Id": 1,
+      "Title": "UTAH INDIE FALL GAME JAM 2024!!",
+      "Description": "Join the Utah Indie Fall Game Jam 2024 and showcase your game development skills!",
+      "ImageUrl": "/images/gamejamfall2024.png",
+      "Host": "IGDA Utah",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "2024-11-04T23:59:59",
+      "VotingEndDate": "2024-11-08T23:59:59",
+      "Link": "https://itch.io/jam/utah-indie-fall-game-jam-2024"
+    }
+  ]
+}
