@@ -1,0 +1,74 @@
+﻿<div class="container mt-5">
+    <h1>Create a Game Jam</h1>
+    <form id="gameJamForm" class="form" method="post">
+        <div class="form-group">
+            <label for="title">Game Jam Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter game jam title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" placeholder="Enter a description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="link">Game Jam Submission Link (e.g., Itch.io)</label>
+            <input type="url" class="form-control" id="link" name="link" placeholder="https://yourgamehost.com" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input type="file" class="form-control-file" id="image" name="image" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Game Jam</button>
+    </form>
+    <div id="message"></div>
+</div>
+
+<script>
+    document.getElementById('gameJamForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        const response = await fetch('/submit-gamejam', {
+            method: 'POST',
+            body: formData
+        });
+
+        const result = await response.json();
+        const messageDiv = document.getElementById('message');
+        if (result.success) {
+            messageDiv.innerHTML = '<p style="color: green;">Game Jam successfully submitted!</p>';
+        } else {
+            messageDiv.innerHTML = '<p style="color: red;">Error submitting Game Jam. Please try again.</p>';
+        }
+    });
+</script>
+<div class="container mt-5">
+    <h1>Upcoming Game Jams</h1>
+    <div id="gameJamsList" class="row"></div>
+</div>
+
+<script>
+    fetch('/gamejams.json')
+        .then(response => response.json())
+        .then(data => {
+            const gameJamsList = document.getElementById('gameJamsList');
+            data.forEach(jam => {
+                const jamCard = `
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="${jam.image}" alt="${jam.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${jam.title}</h5>
+                                <p class="card-text">${jam.description}</p>
+                                <p><strong>Date:</strong> ${jam.date}</p>
+                                <a href="${jam.link}" class="btn btn-primary">View on Itch.io</a>
+                            </div>
+                        </div>
+                    </div>`;
+                gameJamsList.innerHTML += jamCard;
+            });
+        });
+</script>

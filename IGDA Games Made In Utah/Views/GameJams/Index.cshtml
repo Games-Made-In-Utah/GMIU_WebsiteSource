@@ -1,0 +1,36 @@
+﻿@model List<IGDA_Games_Made_In_Utah.Models.GameJam>
+
+<div class="container mt-5">
+    <h1>Upcoming Game Jams</h1>
+
+    <!-- Add the Create Game Jam button -->
+    <div class="mb-4">
+        <a href="@Url.Action("Create", "GameJams")" class="btn btn-success">Create Game Jam</a>
+    </div>
+
+    <div class="row">
+        @foreach (var gameJam in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="@gameJam.ImageUrl" alt="@gameJam.Title Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@gameJam.Title</h5>
+                        <p class="card-text">@gameJam.Description</p>
+                        <p class="card-text">
+                            <strong>Start Date:</strong> @gameJam.StartDate.ToString("MMMM dd, yyyy")
+                            <br>
+                            <strong>End Date:</strong> @gameJam.EndDate.ToString("MMMM dd, yyyy")
+                            @if (gameJam.VotingEndDate.HasValue)
+                            {
+                                <br>
+                                <strong>Voting Ends:</strong> @gameJam.VotingEndDate.Value.ToString("MMMM dd, yyyy")
+                            }
+                        </p>
+                        <a href="@gameJam.Link" class="btn btn-primary">View on itch.io</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
