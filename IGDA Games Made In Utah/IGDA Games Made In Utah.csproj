@@ -29,4 +29,8 @@
 	  <None Update="appsettings.json" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="public\" />
+  </ItemGroup>
+
 </Project>

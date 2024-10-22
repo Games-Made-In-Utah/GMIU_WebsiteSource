@@ -1,8 +1,9 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using IGDA_Games_Made_In_Utah.Models;
 
 namespace IGDA_Games_Made_In_Utah.Controllers
@@ -23,39 +24,43 @@ namespace IGDA_Games_Made_In_Utah.Controllers
             return new List<GameJam>();
         }
 
-        // Index method to display the game jams on the view
-        public async Task<IActionResult> Index()
-        {
-            var gameJams = await GetGameJamsAsync();
-            return View(gameJams);
-        }
-
-        // GET: Create view for creating a new Game Jam
-        [HttpGet]
+        // GET: GameJams/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Handle the form submission for creating a new Game Jam
+        // POST: GameJams/Create
         [HttpPost]
         public async Task<IActionResult> Create(GameJam newGameJam)
         {
+            if (ModelState.IsValid)
+            {
+                // Fetch the existing game jams
+                var gameJams = await GetGameJamsAsync();
+
+                // Assign an ID and add the new game jam
+                newGameJam.Id = gameJams.Count + 1;
+                gameJams.Add(newGameJam);
+
+                // Serialize and save back to the JSON file
+                var gameJamRoot = new GameJamRoot { GameJams = gameJams };
+                var updatedJson = JsonConvert.SerializeObject(gameJamRoot, Formatting.Indented);
+                await System.IO.File.WriteAllTextAsync(_jsonFilePath, updatedJson);
+
+                // Redirect to the index view after creating the game jam
+                return RedirectToAction(nameof(Index));
+            }
+
+            // If the model state is not valid, return the same view with validation errors
+            return View(newGameJam);
+        }
+
+        // GET: GameJams/Index
+        public async Task<IActionResult> Index()
+        {
             var gameJams = await GetGameJamsAsync();
-
-            // Assign a new Id to the new game jam
-            newGameJam.Id = gameJams.Count + 1;
-
-            // Add the new game jam to the list
-            gameJams.Add(newGameJam);
-
-            // Serialize the updated list back to JSON and save it
-            var gameJamRoot = new GameJamRoot { GameJams = gameJams };
-            var updatedJson = JsonConvert.SerializeObject(gameJamRoot, Formatting.Indented);
-            await System.IO.File.WriteAllTextAsync(_jsonFilePath, updatedJson);
-
-            // Redirect back to the Index page after creation
-            return RedirectToAction(nameof(Index));
+            return View(gameJams);
         }
     }
 
