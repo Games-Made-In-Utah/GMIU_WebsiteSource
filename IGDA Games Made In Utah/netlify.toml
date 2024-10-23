@@ -1,3 +1,3 @@
 [build]
-  functions = "output/netlify/functions"
-  publish = "output/public" # Static files and JSON
+  publish = "output"
+  functions = "netlify/functions"

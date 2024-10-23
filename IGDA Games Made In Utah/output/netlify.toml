@@ -1,6 +1,3 @@
 [build]
-  publish = "output" # where static files are stored
-  functions = "netlify/functions" # serverless functions directory
-
-[functions]
-  directory = "netlify/functions"
+  publish = "output"
+  functions = "netlify/functions"
