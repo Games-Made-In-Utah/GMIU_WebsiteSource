@@ -9,7 +9,7 @@ This project is the IGDA Games Made in Utah website, built with ASP.NET Core MVC
 - **Event Scraping**: Automatically fetches and displays upcoming events from IGDA.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Custom Styles**: Includes custom styling using a color palette, animations, and hover effects.
-  
+
 ## Requirements
 
 - .NET SDK (6.0 LTS or later)
@@ -58,19 +58,43 @@ Ensure the following files and folders are included in the output folder before 
    - All `.html` files converted from `.cshtml`.
    - `wwwroot` for all static assets (CSS, images, etc.).
    - Necessary configurations for the site.
-   
+
 2. **Add a `_redirects` File (Optional)**: If your project uses routing and you need to handle any redirects, create a `_redirects` file and place it in the root of your output folder.
 
-### Step 5: Deploy to Netlify
+### Step 5: Deploy to Netlify from Visual Studio Terminal
 
-1. Go to [Netlify](https://netlify.app) and sign in or create an account.
-2. Create a new site by clicking the “New Site from Git” button.
-3. Select your GitHub repository where the project is stored.
-4. In the **Build Settings**:
-   - Build command: None (or `npm run build` if using Node for any frontend work).
-   - Publish directory: Point to your output folder containing the converted `.html` files and the `wwwroot/` directory.
+1. Open the Visual Studio terminal and ensure you are in the root directory of the project.
+2. Install the Netlify CLI globally if you haven't already:
 
-5. Click "Deploy Site" and wait for the process to complete.
+   ```bash
+   npm install netlify-cli -g
+   ```
+
+3. Authenticate with Netlify by running:
+
+   ```bash
+   netlify login
+   ```
+
+4. **Create a Netlify Function** (if required):
+
+   ```bash
+   netlify functions:create
+   ```
+
+5. Deploy the site to Netlify:
+
+   ```bash
+   netlify deploy
+   ```
+
+   You will be prompted for the following:
+   - **Deploy path**: Point to the output folder that contains your `.html` files and `wwwroot` directory.
+   - **Production URL**: Verify the site with a provided Netlify draft URL, then deploy to production:
+
+   ```bash
+   netlify deploy --prod
+   ```
 
 ### Step 6: Verify Deployment
 
@@ -87,10 +111,9 @@ Once deployed, navigate to your Netlify URL (which will be provided during deplo
 
 ## Credits
 
-- Project by Trevor Hicks (IGDA Utah)
+- Project by Trevor Hicks (IGDA Utah) @-2024
 - Event scraping logic based on the `IGDA.org` events page.
-  
+
 ## Contact
 
 If you encounter issues or have questions about setup or contributions, feel free to open an issue or reach out.
-
