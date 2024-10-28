@@ -5,11 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "serve .",
-    "server": "node server.js",
     "build": "echo 'No build step required.'"
   },
   "dependencies": {
-    "fs": "^0.0.1-security",
     "serve": "^14.2.3"
   },
   "keywords": [
