@@ -10,7 +10,7 @@ app.use(bodyParser.json()); // For parsing JSON data
 app.use(express.static('public'));
 
 // Endpoint to handle POST requests for creating new Game Jam
-app.post('/createGameJam', (req, res) => {
+app.post('js/createGameJam', (req, res) => {
     const newGameJam = req.body;
 
     // Read the current gamejams.json file

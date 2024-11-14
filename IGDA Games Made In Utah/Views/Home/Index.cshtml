@@ -1,16 +1,81 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+    var featuredGames = new[]
+
+    {
+        new { Name = "Small Solar Sloth Studios", Game = "Snail Simulator", Image = "/images/SnailSimulator.png", Url = "https://snailsimulator.com/" },
+        new { Name = "Frostbane Studios", Game = "Airlock Arena & Purrseus", Image = "/images/FrostBaneStudios.png", Url = "https://frostbane.com/" },
+        new { Name = "Lotus Mountain Creative", Game = "Narcalid", Image = "/images/LotusMtn.png", Url = "https://store.steampowered.com/app/2341110/Narcalid/?beta=0" }
+    };
 }
+<div class="jumbotron text-center position-relative overflow-hidden">
+    <div id="hero-particles"></div>
+    <img src="~/images/Splashimage.png" alt="Games Made in Utah Splash Image" class="img-fluid mb-4 hero-image">
 
-<div class="jumbotron text-center">
-    <img src="~/images/Splashimage.png" alt="Splash Image" class="img-fluid mb-4">
+    <h1 class="display-4 text-glow">Level Up with Utah's Game Devs</h1>
+    <h2 class="h2 mb-4 text-neon">Discover Epic Quests from the Beehive State</h2>
 
-    <h1 class="display-4">Explore Our Games Made in Utah</h1>
-    <h2 class="h2">Showcasing the best of local game developers in Utah</h2>
+    <hr class="my-4 glow-line">
 
-    <hr class="my-4">
+    <p class="h4 mb-3 text-flicker">Embark on Legendary Adventures</p>
+    <p class="h4 mb-4 text-flicker">Explore Innovative Realms</p>
 
-    <p class="h4">Learn More About the Amazing Games </p>
-    <p class="h4">Created By Local Utah Indie Developers.</p>
-    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Indies")" role="button">Click Here To See Our Current Developers! </a>
+    <a class="btn btn-primary btn-lg pulse-effect" href="@Url.Action("Index", "Indies")" role="button">
+        <i class="fas fa-gamepad mr-2"></i>Join the Quest
+    </a>
 </div>
+
+<section class="featured-games mt-5">
+    <h2 class="text-center mb-4 text-glow">Featured Quests</h2>
+    <div class="row">
+        @foreach (var game in featuredGames)
+
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="card-image-wrapper">
+                        <img src="@game.Image" class="card-img-top" alt="@game.Game">
+                        <div class="card-overlay">
+                            <span class="card-studio">@game.Name</span>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@game.Game</h5>
+                        <p class="card-text flex-grow-1">Embark on an epic journey crafted by @game.Name</p>
+                        <a href="@game.Url" class="btn btn-primary mt-auto pulse-effect" target="_blank">
+                            <i class="fas fa-gamepad mr-2"></i>Begin Adventure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Index", "Indies")" class="btn btn-lg btn-outline-primary pulse-effect">
+            <i class="fas fa-dice-d20 mr-2"></i>Explore All Quests
+        </a>
+    </div>
+</section>
+
+<section class="cta-section text-center mt-5">
+    <h2 class="mb-4 text-glow">Join Our Adventurers Guild</h2>
+    <p class="lead mb-4">Level up with the latest quests, events, and loot from Utah's vibrant game development realm.</p>
+</section>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS('hero-particles', {
+                particles: {
+                    number: { value: 80 },
+                    color: { value: '#00ffff' },
+                    shape: { type: 'triangle' },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    move: { enable: true, speed: 2 }
+                }
+            });
+        });
+    </script>
+}

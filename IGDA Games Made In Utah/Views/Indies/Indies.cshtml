@@ -1,91 +1,52 @@
 ﻿@{
-    ViewData["Title"] = "Current Active Indies";
+    ViewData["Title"] = "Utah's Game Dev Guild";
+
+    var indies = new[]
+
+    {
+        new { Name = "Small Solar Sloth Studios", Game = "Snail Simulator", Image = "/images/SnailSimulator.png", Url = "https://snailsimulator.com/" },
+        new { Name = "Familiars.io", Game = "Familiars.io", Image = "/images/Familiars.png", Url = "https://www.familiars.io/" },
+        new { Name = "Kogoy Galaxy", Game = "Moniker", Image = "/images/Moniker.png", Url = "https://kogoy.com/" },
+        new { Name = "Oakie Studio", Game = "It's A Game Changer", Image = "/images/ItsAGameChanger.png", Url = "https://store.steampowered.com/app/1914330/Sprites_at_Play/" },
+        new { Name = "Frostbane Studios", Game = "Airlock Arena & Purrseus", Image = "/images/FrostBaneStudios.png", Url = "https://frostbane.com/" },
+        new { Name = "Lotus Mountain Creative", Game = "Narcalid", Image = "/images/LotusMtn.png", Url = "https://store.steampowered.com/app/2341110/Narcalid/?beta=0" },
+        new { Name = "D20 Studios", Game = "Abalon", Image = "/images/abalon.png", Url = "https://d20studios.com/" },
+        new { Name = "Justin Whitchurch", Game = "Table Top Creature Tracker", Image = "/images/TTCTgameImage.jpeg", Url = "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/" }
+    };
 }
 
 <div class="container">
-    <h2 class="text-center my-4">Current Active Indies</h2>
+    <h2 class="text-center my-4 text-glow">Utah's Game Dev Guild</h2>
+    <p class="text-center mb-5 lead text-neon">Discover the Legendary Creators Shaping Utah's Gaming Realm</p>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/SnailSimulator.png" class="card-img-top" alt="Snail Simulator">
-                <div class="card-body">
-                    <h5 class="card-title">Small Solar Sloth Studios</h5>
-                    <a href="https://snailsimulator.com/" class="btn btn-primary" target="_blank">Check Us Out!</a>
+        @foreach (var indie in indies)
+
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="card-image-wrapper">
+                        <img src="@indie.Image" class="card-img-top" alt="@indie.Game">
+                        <div class="card-overlay">
+                            <span class="card-studio">@indie.Name</span>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@indie.Game</h5>
+                        <p class="card-text flex-grow-1">A legendary quest forged by @indie.Name</p>
+                        <a href="@indie.Url" class="btn btn-primary mt-auto pulse-effect" target="_blank">
+                            <i class="fas fa-gamepad mr-2"></i>Embark on Adventure
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/Familiars.png" class="card-img-top" alt="Familiars.io">
-                <div class="card-body">
-                    
-                    <h5 class="card-title">Familiars.io</h5>
-                    <a href="https://www.familiars.io/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/Moniker.png" class="card-img-top" alt="Moniker">
-                <div class="card-body">
-                    <h5 class="card-title">Kogoy Galaxy</h5>
-                    <a href="https://kogoy.com/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/ItsAGameChanger.png" class="card-img-top" alt="It’s A Game Changer">
-                <div class="card-body">
-                    <h5 class="card-title">Oakie Studio</h5>
-                    <a href="https://store.steampowered.com/app/1914330/Sprites_at_Play/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/FrostBaneStudios.png" class="card-img-top" alt="Airlock Arena & Purrseus">
-                <div class="card-body">
-                    <h5 class="card-title">Frostbane Studios</h5>
-                    <a href="https://frostbane.com/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/LotusMtn.png" class="card-img-top" alt="Narcalid">
-                <div class="card-body">
-                    <h5 class="card-title">Lotus Mountain Creative</h5>
-                    <a href="https://store.steampowered.com/app/2341110/Narcalid/?beta=0" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/abalon.png" class="card-img-top" alt="D20 Studios">
-                <div class="card-body">
-                    <h5 class="card-title">D20 Studios</h5>
-                    <a href="https://d20studios.com/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="~/images/TTCTgameImage.jpeg" class="card-img-top" alt="Table Top Creature Tracker">
-                <div class="card-body">
-                    <h5 class="card-title">Justin Whitchurch</h5>
-                    <p class="card-text">Release Date: June 28, 2024</p>
-                    <a href="https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/" class="btn btn-primary" target="_blank">Check Us Out!</a>
-                </div>
-            </div>
-        </div>
-
+        }
     </div>
+</div>
+
+<div class="text-center mt-5">
+    <h3 class="text-glow mb-4">Join the Utah Game Developers' Guild</h3>
+    <p class="lead mb-4">Are you a game developer in Utah? Showcase your epic creations here!</p>
+    <a href="#" class="btn btn-lg btn-outline-primary pulse-effect">
+        <i class="fas fa-user-plus mr-2"></i>Apply to Join
+    </a>
 </div>

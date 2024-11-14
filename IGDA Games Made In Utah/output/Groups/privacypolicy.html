@@ -52,14 +52,9 @@
                         <li b-7yscnshm1s class="nav-item">
                             <a class="nav-link" href="/Resources">Resources</a>
                         </li>
-                        <li b-7yscnshm1s class="nav-item">
-                            <a class="nav-link" href="/Contact">Contact Us</a>
-                        </li>
+                       
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" action="/SearchResults.html" method="get">
-                        <input b-7yscnshm1s class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
-                        <button b-7yscnshm1s class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                  
                 </div>
             </div>
         </nav>
@@ -121,54 +116,6 @@
                         <li b-7yscnshm1s><a b-7yscnshm1s href="https://x.com/IGDAUtah" target="_blank">X (Twitter)</a></li>
                     </ul>
                 </div>
-
-                <!-- Newsletter sign-up -->
-                <div b-7yscnshm1s class="col-md-4 newsletter">
-                    <h5 b-7yscnshm1s class="text-uppercase">Newsletter</h5>
-                    <p b-7yscnshm1s>Sign up for our newsletter!</p>
-                    <form id="subscribeForm" class="form-inline justify-content-center">
-                        <div b-7yscnshm1s class="input-group" style="max-width: 300px;">
-                            <input b-7yscnshm1s type="email" id="emailInput" class="form-control" placeholder="Enter your email" required>
-                            <div b-7yscnshm1s class="input-group-append">
-                                <button b-7yscnshm1s type="submit" class="btn btn-primary">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                    <p b-7yscnshm1s id="subscribeMessage"></p>
-                </div>
-
-                <script>
-                    // JavaScript to handle form submission
-                    document.getElementById('subscribeForm').addEventListener('submit', async function (e) {
-                        e.preventDefault();  // Prevent the default form submit
-
-                        const email = document.getElementById('emailInput').value;
-                        const messageContainer = document.getElementById('subscribeMessage');
-
-                        try {
-                            // Send the email via AJAX to the server
-                            const response = await fetch('/Newsletter/Subscribe', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ email: email })
-                            });
-
-                            const result = await response.json();
-
-                            // Display success or error message
-                            if (result.success) {
-                                messageContainer.style.color = 'green';
-                                messageContainer.textContent = result.message;  // Success message from server
-                            } else {
-                                messageContainer.style.color = 'red';
-                                messageContainer.textContent = result.message;  // Error message from server
-                            }
-                        } catch (error) {
-                            messageContainer.style.color = 'red';
-                            messageContainer.textContent = "There was an error processing your request.";
-                        }
-                    });
-                </script>
 
                 <!-- Privacy and Terms Section -->
                 <div b-7yscnshm1s class="col-md-4">

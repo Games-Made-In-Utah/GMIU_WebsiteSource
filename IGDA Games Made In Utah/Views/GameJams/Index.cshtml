@@ -1,36 +1,71 @@
 ﻿@model List<IGDA_Games_Made_In_Utah.Models.GameJam>
 
 <div class="container mt-5">
-    <h1>Upcoming Game Jams</h1>
+    <h1 class="text-center text-glow mb-5">Epic Game Jam Quests</h1>
 
-    <!-- Add the Create Game Jam button -->
-    <div class="mb-4">
-        <a href="@Url.Action("Create", "GameJams")" class="btn btn-success">Create Game Jam</a>
+    <div class="text-center mb-5">
+        <a href="@Url.Action("Create", "GameJams")" class="btn btn-lg btn-primary pulse-effect">
+            <i class="fas fa-plus-circle mr-2"></i>Forge a New Game Jam
+        </a>
     </div>
 
     <div class="row">
         @foreach (var gameJam in Model)
         {
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img class="card-img-top" src="@gameJam.ImageUrl" alt="@gameJam.Title Image">
-                    <div class="card-body">
-                        <h5 class="card-title">@gameJam.Title</h5>
-                        <p class="card-text">@gameJam.Description</p>
-                        <p class="card-text">
-                            <strong>Start Date:</strong> @gameJam.StartDate.ToString("MMMM dd, yyyy")
-                            <br>
-                            <strong>End Date:</strong> @gameJam.EndDate.ToString("MMMM dd, yyyy")
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="card-image-wrapper">
+                        <img src="@gameJam.ImageUrl" class="card-img-top" alt="@gameJam.Title Image" style="height: 200px; object-fit: cover;">
+                        <div class="card-overlay">
+                            <span class="card-date">@gameJam.StartDate.ToString("MMM dd") - @gameJam.EndDate.ToString("MMM dd, yyyy")</span>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-neon">@gameJam.Title</h5>
+                        <p class="card-text flex-grow-1">@gameJam.Description</p>
+                        <div class="mt-auto">
+                            <p class="card-text">
+                                <i class="fas fa-hourglass-start text-primary mr-2"></i>Starts: @gameJam.StartDate.ToString("MMMM dd, yyyy")
+                            </p>
+                            <p class="card-text">
+                                <i class="fas fa-hourglass-end text-danger mr-2"></i>Ends: @gameJam.EndDate.ToString("MMMM dd, yyyy")
+                            </p>
                             @if (gameJam.VotingEndDate.HasValue)
                             {
-                                <br>
-                                <strong>Voting Ends:</strong> @gameJam.VotingEndDate.Value.ToString("MMMM dd, yyyy")
+                                <p class="card-text">
+                                    <i class="fas fa-vote-yea text-success mr-2"></i>Voting Ends: @gameJam.VotingEndDate.Value.ToString("MMMM dd, yyyy")
+                                </p>
                             }
-                        </p>
-                        <a href="@gameJam.Link" class="btn btn-primary">View on itch.io</a>
+                        </div>
+                        <a href="@gameJam.Link" class="btn btn-primary mt-3 pulse-effect" target="_blank">
+                            <i class="fas fa-gamepad mr-2"></i>Join the Quest on itch.io
+                        </a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
+<div class="text-center mt-5">
+    <h3 class="text-glow mb-4">Level Up Your Game Dev Skills</h3>
+    <p class="lead mb-4">Join a Game Jam and forge unforgettable gaming experiences!</p>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.game-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px) scale(1.02)';
+                    card.style.boxShadow = '0 10px 20px rgba(0, 255, 255, 0.3)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                    card.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+}
