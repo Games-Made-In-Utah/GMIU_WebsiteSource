@@ -1,6 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 
+
+
     var featuredGames = new[]
 
     {
@@ -9,20 +11,23 @@
         new { Name = "Lotus Mountain Creative", Game = "Narcalid", Image = "/images/LotusMtn.png", Url = "https://store.steampowered.com/app/2341110/Narcalid/?beta=0" }
     };
 }
+
 <div class="jumbotron text-center position-relative overflow-hidden">
-    <div id="hero-particles"></div>
+
+    <h1 class="display-4 text-glow">Where gamers find Utah made games!</h1>
+
     <img src="~/images/Splashimage.png" alt="Games Made in Utah Splash Image" class="img-fluid mb-4 hero-image">
-
-    <h1 class="display-4 text-glow">Level Up with Utah's Game Devs</h1>
     <h2 class="h2 mb-4 text-neon">Discover Epic Quests from the Beehive State</h2>
-
     <hr class="my-4 glow-line">
 
     <p class="h4 mb-3 text-flicker">Embark on Legendary Adventures</p>
     <p class="h4 mb-4 text-flicker">Explore Innovative Realms</p>
+    <div id="hero-particles"></div>
+</div>
 
+<div class="text-center mt-4 mb-5">
     <a class="btn btn-primary btn-lg pulse-effect" href="@Url.Action("Index", "Indies")" role="button">
-        <i class="fas fa-gamepad mr-2"></i>Join the Quest
+        <i class="fas fa-gamepad mr-2"></i>Click here for some fun
     </a>
 </div>
 

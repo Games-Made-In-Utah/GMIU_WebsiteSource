@@ -2,13 +2,13 @@
   "gameJams": [
     {
       "id": 1,
-      "title": "Games Made in Utah Winter Game Jam 2024!",
-      "description": "Welcome to the Games Made in Utah Winter Game Jam 2024! This is a great opportunity for game developers across Utah to showcase their skills, learn new techniques, collaborate, and most importantly, have fun! Whether you're a seasoned developer or a first-time participant, this event is all about creativity and community.",
-      "startDate": "2024-12-06T23:59:59",
-      "endDate": "2024-12-06T23:59:59",
+      "title": "UTAH INDIE WINTER GAME JAM 2024!!",
+      "description": "Join the Utah Indie Winter Game Jam 2024 and showcase your game development skills!",
+      "startDate": "2024-12-06T11:00:00",
+      "endDate": "2024-12-10T23:59:59",
       "votingEndDate": "2024-12-14T23:59:59",
-      "ImageUrl": "/images/wintergamejam2024.png",
-      "link": "https://itch.io/jam/utahwintergamejam2024"
+      "link": "https://itch.io/jam/utah-indie-fall-game-jam-2024",
+      "imageUrl": "/images/wintergamejam2024.png"
     }
   ]
 }
