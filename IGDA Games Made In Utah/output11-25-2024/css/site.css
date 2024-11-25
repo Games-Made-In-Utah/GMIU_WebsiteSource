@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    background-image: url('/images/pixel-stars.png');
+    background-attachment: fixed;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/Splashimage.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+.text-neon {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+}
+
+.text-flicker {
+    animation: textFlicker 3s infinite alternate;
+}
+
+@keyframes textFlicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #00ffff, 0 0 80px #00ffff, 0 0 90px #00ffff, 0 0 100px #00ffff, 0 0 150px #00ffff;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+.glow-line {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+/* Game Cards */
+.game-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffff;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+    .game-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }
+
+.card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.card-studio {
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-title {
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+    .btn-primary:hover {
+        background-color: #00ffff;
+        border-color: #00ffff;
+        color: #000;
+        box-shadow: 0 0 15px #00ffff;
+    }
+
+.btn-outline-primary {
+    color: #00ffff;
+    border-color: #00ffff;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+    .btn-outline-primary:hover {
+        color: #000;
+        background-color: #00ffff;
+        border-color: #00ffff;
+        box-shadow: 0 0 15px #00ffff;
+    }
+
+.pulse-effect {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 255, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 0, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 255, 0);
+    }
+}
+
+/* Form Styles */
+.neon-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffff;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+    .neon-input:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px #00ffff;
+        outline: none;
+    }
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #00ffff;
+}
+
+.nav-link {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #00ffff !important;
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #00ffff;
+}
+
+    .footer a {
+        color: #00ffff;
+        transition: all

@@ -1,22 +1,20 @@
-﻿const express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
-
 const app = express();
-app.use(bodyParser.json());
+
+app.use(bodyParser.json()); // For parsing JSON data
 
 // Serve static files
 app.use(express.static('public'));
 
 // Endpoint to handle POST requests for creating new Game Jam
-app.post('/js/createGameJam', (req, res) => {
+app.post('js/createGameJam', (req, res) => {
     const newGameJam = req.body;
 
-    // Define the path to the JSON file
-    const filePath = path.join(__dirname, 'data', 'gamejams.json');
-
     // Read the current gamejams.json file
+    const filePath = path.join(__dirname, 'data/gamejams.json');
     fs.readFile(filePath, 'utf-8', (err, data) => {
         if (err) {
             return res.status(500).json({ message: 'Error reading file' });
@@ -38,8 +36,7 @@ app.post('/js/createGameJam', (req, res) => {
     });
 });
 
-// Start the server locally on port 3000
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+// Start the server
+app.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
 });
