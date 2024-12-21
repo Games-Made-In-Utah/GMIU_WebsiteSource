@@ -1,45 +1,33 @@
-const fs = require('fs').promises;
-const path = require('path');
+const fs = require('fs').promises
+const path = require('path')
 
 exports.handler = async function (event, context) {
     if (event.httpMethod !== 'POST') {
-        return {
-            statusCode: 405,
-            body: JSON.stringify({ message: 'Method Not Allowed' }), // Ensure JSON response
-        };
+        return { statusCode: 405, body: 'Method Not Allowed' }
     }
 
     try {
-        // Ensure the event body is valid
-        if (!event.body) {
-            throw new Error("No data sent in the request body");
-        }
+        const filePath = path.join(__dirname, '../wwwroot/data/gamejams.json')
+        const fileData = await fs.readFile(filePath, 'utf8')
+        let gameJams = JSON.parse(fileData)
 
-        // Parse the incoming body to JSON
-        const newGameJam = JSON.parse(event.body);
+        const newGameJam = JSON.parse(event.body)
+        newGameJam.id = gameJams.gameJams.length + 1
+        gameJams.gameJams.push(newGameJam)
 
-        // Ensure the file path is correct
-        const filePath = path.resolve(__dirname, '../../public/data/gamejams.json');
-        
-        // Check if the file exists
-        const fileData = await fs.readFile(filePath, 'utf8');
-        const gameJams = JSON.parse(fileData);
-
-        // Add the new game jam with an incremented ID
-        newGameJam.id = gameJams.length + 1;
-        gameJams.push(newGameJam);
-
-        // Write back to the JSON file
-        await fs.writeFile(filePath, JSON.stringify(gameJams, null, 2));
+        await fs.writeFile(filePath, JSON.stringify(gameJams, null, 2))
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: 'Game Jam created successfully!' }),
-        };
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: 'Game Jam created successfully!' })
+        }
     } catch (error) {
         return {
             statusCode: 500,
-            body: JSON.stringify({ message: `Error: ${error.message}` }), // Error handling as JSON
-        };
+            body: JSON.stringify({ error: 'Failed to create game jam' })
+        }
     }
-};
+}

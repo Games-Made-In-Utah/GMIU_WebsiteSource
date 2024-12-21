@@ -1,20 +1,18 @@
-const fs = require('fs').promises;
-const path = require('path');
+import { promises as fs } from 'fs'
+import path from 'path'
 
-exports.handler = async function(event, context) {
-    try {
-        const filePath = path.resolve(__dirname, '../../public/data/gamejams.json');
-        const fileData = await fs.readFile(filePath, 'utf8');
-        const gameJams = JSON.parse(fileData);
+export default async function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ message: 'Method Not Allowed' })
+  }
 
-        return {
-            statusCode: 200,
-            body: JSON.stringify(gameJams),
-        };
-    } catch (error) {
-        return {
-            statusCode: 500,
-            body: `Error: ${error.message}`,
-        };
-    }
-};
+  try {
+    const filePath = path.join(process.cwd(), 'public/data/gamejams.json')
+    const fileData = await fs.readFile(filePath, 'utf8')
+    const gameJams = JSON.parse(fileData)
+
+    res.status(200).json(gameJams)
+  } catch (error) {
+    res.status(500).json({ message: `Error: ${error.message}` })
+  }
+}
