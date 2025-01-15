@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Snail Simulator",
+    "developer": "Small Solar Sloth Studios",
+    "description": "Have you ever wanted to be a snail? Now you can be! Explore the vast Snearth with snail friends! Join monthly Snail Parties! MMOS (Massive Multiplayer Online Snails)! BECOME a snail (in a simulation)!!",
+    "image": "/images/SnailSimulator.png",
+    "imageAlt": "Snail Simulator",
+    "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/"
+  },
+  {
+    "title": "Familiars.io",
+    "developer": "Familiars.io",
+    "description": "A unique online game where players collect and battle fantastical creatures known as Familiars.",
+    "image": "/images/Familiars.png",
+    "imageAlt": "Familiars.io",
+    "link": "https://www.familiars.io/"
+  },
+  { // Might need a different description?
+    "title": "Moniker",
+    "developer": "Kogoy Galaxy",
+    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.",
+    "image": "/images/Moniker.png",
+    "imageAlt": "Moniker",
+    "link": "https://kogoy.com/"
+  }
+]
