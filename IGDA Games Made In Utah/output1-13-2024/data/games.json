@@ -15,12 +15,53 @@
     "imageAlt": "Familiars.io",
     "link": "https://www.familiars.io/"
   },
-  { // Might need a different description?
+  {
     "title": "Moniker",
     "developer": "Kogoy Galaxy",
-    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.",
+    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.", // Might need a different description?
     "image": "/images/Moniker.png",
     "imageAlt": "Moniker",
     "link": "https://kogoy.com/"
+  },
+  // Insert "It's A Game Changer" here
+  {
+    "title": "Airlock Arena &amp; Purrseus",
+    "developer": "Frostbane Studios",
+    "description": "A studio known for its action-packed games like Airlock Arena and the adorable Purrseus.", // Same here lol
+    "image": "/images/FrostBaneStudios.png",
+    "imageAlt": "Airlock Arena &amp; Purrseus",
+    "link": "https://frostbane.com/"
+  },
+  {
+    "title": "Narcalid",
+    "developer": "Lotus Mountain Creative",
+    "description": "Narcalid is a puzzle platformer with peaceful exploration and mighty challenges in a strange, unknown world. Use real-life meditation skills in compelling spiritual narratives to open the gateway to Earth before Mother Narcalid becomes unstoppable!",
+    "image": "/images/LotusMtn.png",
+    "imageAlt": "Narcalid",
+    "link": "https://store.steampowered.com/app/2341110/Narcalid/?beta=0"
+  },
+  {
+    "title": "Abalon",
+    "developer": "D20 Studios",
+    "description": "D20 Studios brings classic RPG vibes with modern twists, exemplified by their strategic and fantasy-rich game Abalon.",
+    "image": "/images/abalon.png",
+    "imageAlt": "Abalon",
+    "link": "https://d20studios.com/"
+  },
+  {
+    "title": "Table Top Creature Tracker",
+    "developer": "Justin Whitchurch",
+    "description": "Roll for initiative! This is a lightweight and easy-to-use Game Master&#x27;s companion tool that won&#x27;t interrupt the flow of your tabletop roleplaying game, and holds everything you&#x27;ll need to stay organized and focused on your game.",
+    "image": "/images/TTCTgameImage.jpeg",
+    "imageAlt": "Table Top Creature Tracker",
+    "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/"
+  },
+  {
+    "title": "The Incredible Baron",
+    "developer": "Flat Red Ball",
+    "description": "The Incredible Baron combines real-time strategy gameplay with over 45 collectible animal species in a tale of exploration, science, and betrayal.",
+    "image": "/images/TheIncredibleBaronHeader.jpg",
+    "imageAlt": "The Incredible Baron",
+    "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/"
   }
 ]
