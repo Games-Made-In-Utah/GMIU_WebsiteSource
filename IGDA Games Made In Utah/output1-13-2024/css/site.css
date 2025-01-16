@@ -27,6 +27,12 @@ body {
     z-index: -1;
 }
 
+.ul-horizontal {
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+}
+
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/Splashimage.png');
