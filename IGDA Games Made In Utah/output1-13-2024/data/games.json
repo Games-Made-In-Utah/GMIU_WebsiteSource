@@ -1,11 +1,27 @@
 [
   {
+    "title": "Fortnite",
+    "developer": "Epic Games",
+    "description": "Create, play, and battle with friends for free in Fortnite. Be the last player standing in Battle Royale and Zero Build, experience a concert or live event, or discover over a million creator made games, including racing, parkour, zombie survival, and more.",
+    "image": "/images/fortnite_logo.jpg",
+    "imageAlt": "Fortnite",
+    "link": "https://www.fortnite.com/download?lang=en-US"
+  },
+  {
     "title": "Snail Simulator",
     "developer": "Small Solar Sloth Studios",
     "description": "Have you ever wanted to be a snail? Now you can be! Explore the vast Snearth with snail friends! Join monthly Snail Parties! MMOS (Massive Multiplayer Online Snails)! BECOME a snail (in a simulation)!!",
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
     "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/"
+  },
+  {
+    "title": "Hogwarts Legacy",
+    "developer": "Avalanche Software",
+    "description": "Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.",
+    "image": "/images/hogwarts_logo.jpg",
+    "imageAlt": "Hogwarts Legacy",
+    "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/"
   },
   {
     "title": "Familiars.io",
