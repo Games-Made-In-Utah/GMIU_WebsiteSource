@@ -24,6 +24,30 @@
     "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/"
   },
   {
+    "title": "Annie and the AI",
+    "developer": "NoSleepGames LLC",
+    "description": "Step into the role of Esme, an AI built by Annie but built for what purpose? Evolve and learn by solving visual puzzles accompanied by beautiful hand-drawn artwork. Learn all about Annie's life, befriend her, and grow together.",
+    "image": "/images/annie_logo.jpg",
+    "imageAlt": "Annie and the AI",
+    "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/"
+  },
+  {
+    "title": "Dino Mayhem",
+    "developer": "Digital Dauber Studios",
+    "description": "Cause mayhem in this retro platformer by devouring people and destroying vehicles to earn points.",
+    "image": "/images/dino_mayhem_logo.jpg",
+    "imageAlt": "Dino Mayhem",
+    "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/"
+  },
+  {
+    "title": "Screamboat Willie",
+    "developer": "Neumont Game Studios",
+    "description": "After awaking upon the steam boat of the famous, Steamboat Willie, The player is tasked with escaping by any means necessary. A task easier said than done as Willie, who was locked up for nearly 100 years, roams about the boat relentlessly hunting the player.",
+    "image": "/images/screamboat_logo.jpg",
+    "imageAlt": "Screamboat Willie",
+    "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/"
+  },
+  {
     "title": "Familiars.io",
     "developer": "Familiars.io",
     "description": "A unique online game where players collect and battle fantastical creatures known as Familiars.",
@@ -78,6 +102,14 @@
     "image": "/images/TTCTgameImage.jpeg",
     "imageAlt": "Table Top Creature Tracker",
     "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/"
+  },
+  {
+    "title": "Alpacalypse",
+    "developer": "Neumont Game Studios",
+    "description": "Alpacalypse is a 2.5D action platformer where you control Pancake The Llama, fighting to rescue your wife, The Mrs. Kick and spit your way through hordes of alpacas, collecting coins, and platforming your way to victory.",
+    "image": "/images/alpacalypse_logo.jpg",
+    "imageAlt": "Alpacalypse",
+    "link": "https://store.steampowered.com/app/2325060/Alpacalypse/?curator_clanid=44282448"
   },
   {
     "title": "The Incredible Baron",
