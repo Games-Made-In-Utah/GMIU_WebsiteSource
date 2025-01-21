@@ -18,18 +18,25 @@
   {
     "title": "Moniker",
     "developer": "Kogoy Galaxy",
-    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.", // Might need a different description?
+    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.",
     "image": "/images/Moniker.png",
     "imageAlt": "Moniker",
     "link": "https://kogoy.com/"
   },
-  // Insert "It's A Game Changer" here
   {
-    "title": "Airlock Arena &amp; Purrseus",
+    "title": "It's A Game Changer",
+    "developer": "Oakie Studios",
+    "description": "Cycle through diverse 2D and 3D microgames like dodging the rain and fishing. Choose upgrades, face rapid-fire challenges, and enjoy endless replayability!",
+    "image": "/images/ItsAGameChanger.jpg",
+    "imageAlt": "It's A Game Changer",
+    "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/"
+  },
+  {
+    "title": "Airlock Arena & Purrseus",
     "developer": "Frostbane Studios",
-    "description": "A studio known for its action-packed games like Airlock Arena and the adorable Purrseus.", // Same here lol
+    "description": "A studio known for its action-packed games like Airlock Arena and the adorable Purrseus.",
     "image": "/images/FrostBaneStudios.png",
-    "imageAlt": "Airlock Arena &amp; Purrseus",
+    "imageAlt": "Airlock Arena & Purrseus",
     "link": "https://frostbane.com/"
   },
   {
@@ -51,7 +58,7 @@
   {
     "title": "Table Top Creature Tracker",
     "developer": "Justin Whitchurch",
-    "description": "Roll for initiative! This is a lightweight and easy-to-use Game Master&#x27;s companion tool that won&#x27;t interrupt the flow of your tabletop roleplaying game, and holds everything you&#x27;ll need to stay organized and focused on your game.",
+    "description": "Roll for initiative! This is a lightweight and easy-to-use Game Master's companion tool that won't interrupt the flow of your tabletop roleplaying game, and holds everything you'll need to stay organized and focused on your game.",
     "image": "/images/TTCTgameImage.jpeg",
     "imageAlt": "Table Top Creature Tracker",
     "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/"
