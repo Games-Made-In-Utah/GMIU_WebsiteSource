@@ -41,81 +41,23 @@
 
             <div class="jumbotron text-center position-relative overflow-hidden">
 
-                <h1 class="display-4 text-glow">Where gamers find Utah made games!</h1>
+                <h1 class="display-4 text-glow" style="margin-bottom: 2%;">Where gamers find Utah made games!</h1>
 
                 <img src="/images/Splashimage.png" alt="Games Made in Utah Splash Image" class="img-fluid mb-4 hero-image">
-                <h2 class="h2 mb-4 text-neon">Discover Epic Quests from the Beehive State</h2>
                 <hr class="my-4 glow-line">
-
-                <p class="h4 mb-3 text-flicker">Embark on Legendary Adventures</p>
-                <p class="h4 mb-4 text-flicker">Explore Innovative Realms</p>
+                <h2 class="h2 mb-4 text-flicker">Try Today's Puzzle!</h2>
                 <div id="hero-particles"></div>
             </div>
 
-            <div class="text-center mt-4 mb-5">
-                <a class="btn btn-primary btn-lg pulse-effect" href="/Games" role="button">
-                    <i class="fas fa-gamepad mr-2"></i>Click here for some fun
-                </a>
-            </div>
-
             <section class="featured-games mt-5">
-                <h2 class="text-center mb-4 text-glow">Featured Quests</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card game-card h-100">
-                            <div class="card-image-wrapper">
-                                <img src="/images/TheIncredibleBaronHeader.jpg" class="card-img-top" alt="The Incredible Baron">
-                                <div class="card-overlay">
-                                    <span class="card-studio">FlatRedBall</span>
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">The Incredible Baron</h5>
-                                <p class="card-text flex-grow-1">Embark on an epic journey crafted by FlatRedBall</p>
-                                <a href="https://store.steampowered.com/app/441510/The_Incredible_Baron/" class="btn btn-primary mt-auto pulse-effect" target="_blank">
-                                    <i class="fas fa-gamepad mr-2"></i>Begin Adventure
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card game-card h-100">
-                            <div class="card-image-wrapper">
-                                <img src="/images/FrostBaneStudios.png" class="card-img-top" alt="Airlock Arena &amp; Purrseus">
-                                <div class="card-overlay">
-                                    <span class="card-studio">Frostbane Studios</span>
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Airlock Arena &amp; Purrseus</h5>
-                                <p class="card-text flex-grow-1">Embark on an epic journey crafted by Frostbane Studios</p>
-                                <a href="https://frostbane.com/" class="btn btn-primary mt-auto pulse-effect" target="_blank">
-                                    <i class="fas fa-gamepad mr-2"></i>Begin Adventure
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card game-card h-100">
-                            <div class="card-image-wrapper">
-                                <img src="/images/LotusMtn.png" class="card-img-top" alt="Narcalid">
-                                <div class="card-overlay">
-                                    <span class="card-studio">Lotus Mountain Creative</span>
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Narcalid</h5>
-                                <p class="card-text flex-grow-1">Embark on an epic journey crafted by Lotus Mountain Creative</p>
-                                <a href="https://store.steampowered.com/app/2341110/Narcalid/?beta=0" class="btn btn-primary mt-auto pulse-effect" target="_blank">
-                                    <i class="fas fa-gamepad mr-2"></i>Begin Adventure
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <hr class="my-4 glow-line">
+                <h2 class="text-center mb-4 text-glow">Featured Games</h2>
+                
+                <div id="featured_games" class="row"></div>
+
                 <div class="text-center mt-4">
                     <a href="/Games" class="btn btn-lg btn-outline-primary pulse-effect">
-                        <i class="fas fa-dice-d20 mr-2"></i>Explore All Quests
+                        <i class="fa-solid fa-gamepad"></i> Explore All Games
                     </a>
                 </div>
             </section>
@@ -147,6 +89,7 @@
         });
     </script>
 
+    <script src="/js/featured_games.js"></script>
 
     <!-- Visual Studio Browser Link -->
     <script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="9745273e133b446f865b4db6b74cfe4b" data-requestMappingFromServer="false" data-connectUrl="http://localhost:54120/a56aa88b4b514e63b4ffc22e05a8c92e/browserLink"></script>
