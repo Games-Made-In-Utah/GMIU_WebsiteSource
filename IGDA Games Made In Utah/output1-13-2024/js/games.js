@@ -1,11 +1,8 @@
 ﻿// Credits to https://www.geeksforgeeks.org/read-json-file-using-javascript/ & https://stackoverflow.com/questions/18238173/javascript-loop-through-json-array
 // BIG thanks for the help!
 
-var filter = ""
-
-function filterGames() {
-
-}
+var filter = "";
+var gameData = null;
 
 function stringToHTML(text) {
     let parser = new DOMParser();
@@ -14,6 +11,9 @@ function stringToHTML(text) {
 }
 
 function showGames(games) {
+    let collection = document.querySelector("#games");
+    collection.innerHTML = "";
+
     for (let i = 0; i < games.length; i++) {
         let game = games[i]
 
@@ -42,16 +42,27 @@ function showGames(games) {
                 image.setAttribute("alt", game.imageAlt);
                 link.setAttribute("href", game.link);
 
-
-
-                let collection = document.querySelector("#games")
-                collection.append(html)
+                if (filter == "") { collection.append(html); }
+                else {
+                    for (x in game.tags) {
+                        if (game.tags[x].toLowerCase() == filter.toLowerCase()) {
+                            console.log(game.title + "has the tag: " + game.tags[x] + " (" + filter + ")")
+                            collection.append(html);
+                            break;
+                        }
+                    }
+                }
             })
             .catch((error) =>
                 console.error("Unable to show game: ", error));
     }
 }
 
+function filterGames(selection) {
+    filter = selection.value;
+    showGames(gameData);
+    console.log(filter)
+}
 function fetchGames() {
     fetch("/data/game_list.json")
         .then((res) => {
@@ -62,8 +73,9 @@ function fetchGames() {
             return res.json();
         })
         .then((data) => {
-            showGames(data);
-            console.log(data);
+            gameData = data;
+            showGames(gameData);
+            console.log(gameData);
         })
         .catch((error) =>
             console.error("Unable to fetch data:", error));
