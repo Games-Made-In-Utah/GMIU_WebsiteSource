@@ -46,7 +46,6 @@ function showGames(games) {
                 else {
                     for (x in game.tags) {
                         if (game.tags[x].toLowerCase() == filter.toLowerCase()) {
-                            console.log(game.title + "has the tag: " + game.tags[x] + " (" + filter + ")")
                             collection.append(html);
                             break;
                         }
@@ -61,8 +60,8 @@ function showGames(games) {
 function filterGames(selection) {
     filter = selection.value;
     showGames(gameData);
-    console.log(filter)
 }
+
 function fetchGames() {
     fetch("/data/game_list.json")
         .then((res) => {
@@ -75,7 +74,6 @@ function fetchGames() {
         .then((data) => {
             gameData = data;
             showGames(gameData);
-            console.log(gameData);
         })
         .catch((error) =>
             console.error("Unable to fetch data:", error));

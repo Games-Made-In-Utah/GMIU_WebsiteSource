@@ -101,11 +101,11 @@
   {
     "title": "Abalon",
     "developer": "D20 Studios",
-    "description": "D20 Studios brings classic RPG vibes with modern twists, exemplified by their strategic and fantasy-rich game Abalon.",
+    "description": "Choose your summoner and explore a tabletop world to discover its secrets. Build the perfect deck, outsmart your enemies and become legend!",
     "image": "/images/abalon.png",
     "imageAlt": "Abalon",
     "link": "https://store.steampowered.com/app/1681840/Abalon_Roguelike_Tactics_CCG/",
-    "tags": ["Strategy", "Released", "Indie", "Paid"]
+    "tags": ["Roguelike", "Released", "Indie", "Paid"]
   },
   {
     "title": "Table Top Creature Tracker",

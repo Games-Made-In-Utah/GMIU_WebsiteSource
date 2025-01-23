@@ -28,9 +28,7 @@ function NewFeaturedGames(games) {
                     let description = html.querySelector("#description")
                     let image = html.querySelector("#image")
                     let link = html.querySelector("#link")
-    
-                    console.log(title)
-    
+
                     title.textContent = game.title;
                     developer.textContent = game.developer;
                     description.textContent = game.description;
@@ -43,8 +41,6 @@ function NewFeaturedGames(games) {
                 })
                 .catch((error) =>
                     console.error("Unable to show game: ", error));
-    
-            console.log(game.title);
         }
 }
 
