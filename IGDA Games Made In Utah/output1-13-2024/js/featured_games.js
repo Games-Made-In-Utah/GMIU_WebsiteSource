@@ -23,11 +23,11 @@ function NewFeaturedGames(games) {
                     let html = stringToHTML(text);
                     html = html.querySelector("div")
     
-                    let title = html.querySelector("h5")
-                    let developer = html.querySelector("span")
-                    let description = html.querySelector("p")
-                    let image = html.querySelector("img")
-                    let link = html.querySelector("a")
+                    let title = html.querySelector("#title")
+                    let developer = html.querySelector("#developer")
+                    let description = html.querySelector("#description")
+                    let image = html.querySelector("#image")
+                    let link = html.querySelector("#link")
     
                     console.log(title)
     

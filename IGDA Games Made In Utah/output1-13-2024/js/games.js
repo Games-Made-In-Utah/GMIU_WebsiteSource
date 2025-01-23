@@ -1,6 +1,12 @@
 ﻿// Credits to https://www.geeksforgeeks.org/read-json-file-using-javascript/ & https://stackoverflow.com/questions/18238173/javascript-loop-through-json-array
 // BIG thanks for the help!
 
+var filter = ""
+
+function filterGames() {
+
+}
+
 function stringToHTML(text) {
     let parser = new DOMParser();
     let doc = parser.parseFromString(text, 'text/html');
@@ -23,13 +29,11 @@ function showGames(games) {
                 let html = stringToHTML(text);
                 html = html.querySelector("div")
 
-                let title = html.querySelector("h5")
-                let developer = html.querySelector("span")
-                let description = html.querySelector("p")
-                let image = html.querySelector("img")
-                let link = html.querySelector("a")
-
-                console.log(title)
+                let title = html.querySelector("#title")
+                let developer = html.querySelector("#developer")
+                let description = html.querySelector("#description")
+                let image = html.querySelector("#image")
+                let link = html.querySelector("#link")
 
                 title.textContent = game.title;
                 developer.textContent = game.developer;
@@ -38,13 +42,13 @@ function showGames(games) {
                 image.setAttribute("alt", game.imageAlt);
                 link.setAttribute("href", game.link);
 
+
+
                 let collection = document.querySelector("#games")
                 collection.append(html)
             })
             .catch((error) =>
                 console.error("Unable to show game: ", error));
-
-        console.log(game.title);
     }
 }
 

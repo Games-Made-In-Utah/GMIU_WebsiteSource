@@ -5,7 +5,8 @@
     "description": "Create, play, and battle with friends for free in Fortnite. Be the last player standing in Battle Royale and Zero Build, experience a concert or live event, or discover over a million creator made games, including racing, parkour, zombie survival, and more.",
     "image": "/images/fortnite_logo.jpg",
     "imageAlt": "Fortnite",
-    "link": "https://www.fortnite.com/download?lang=en-US"
+    "link": "https://www.fortnite.com/download?lang=en-US",
+    "tags": []
   },
   {
     "title": "Snail Simulator",
@@ -13,7 +14,8 @@
     "description": "Have you ever wanted to be a snail? Now you can be! Explore the vast Snearth with snail friends! Join monthly Snail Parties! MMOS (Massive Multiplayer Online Snails)! BECOME a snail (in a simulation)!!",
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
-    "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/"
+    "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/",
+    "tags": []
   },
   {
     "title": "Hogwarts Legacy",
@@ -21,7 +23,8 @@
     "description": "Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.",
     "image": "/images/hogwarts_logo.jpg",
     "imageAlt": "Hogwarts Legacy",
-    "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/"
+    "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
+    "tags": []
   },
   {
     "title": "Annie and the AI",
@@ -29,7 +32,8 @@
     "description": "Step into the role of Esme, an AI built by Annie but built for what purpose? Evolve and learn by solving visual puzzles accompanied by beautiful hand-drawn artwork. Learn all about Annie's life, befriend her, and grow together.",
     "image": "/images/annie_logo.jpg",
     "imageAlt": "Annie and the AI",
-    "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/"
+    "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/",
+    "tags": []
   },
   {
     "title": "Dino Mayhem",
@@ -37,7 +41,8 @@
     "description": "Cause mayhem in this retro platformer by devouring people and destroying vehicles to earn points.",
     "image": "/images/dino_mayhem_logo.jpg",
     "imageAlt": "Dino Mayhem",
-    "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/"
+    "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/",
+    "tags": []
   },
   {
     "title": "Screamboat Willie",
@@ -45,7 +50,8 @@
     "description": "After awaking upon the steam boat of the famous, Steamboat Willie, The player is tasked with escaping by any means necessary. A task easier said than done as Willie, who was locked up for nearly 100 years, roams about the boat relentlessly hunting the player.",
     "image": "/images/screamboat_logo.jpg",
     "imageAlt": "Screamboat Willie",
-    "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/"
+    "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/",
+    "tags": []
   },
   {
     "title": "Familiars.io",
@@ -53,7 +59,8 @@
     "description": "A unique online game where players collect and battle fantastical creatures known as Familiars.",
     "image": "/images/Familiars.png",
     "imageAlt": "Familiars.io",
-    "link": "https://www.familiars.io/"
+    "link": "https://www.familiars.io/",
+    "tags": []
   },
   {
     "title": "Virtuále",
@@ -61,7 +68,8 @@
     "description": "A turn-based heist game where you get to mastermind your own high-profile job. Sneak, hack, and smash your way to riches in Virtuále: Heist Simulations!",
     "image": "/images/virtuale_logo.jpg",
     "imageAlt": "Virtuále",
-    "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/"
+    "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/",
+    "tags": []
   },
   {
     "title": "It's A Game Changer",
@@ -69,7 +77,8 @@
     "description": "Cycle through diverse 2D and 3D microgames like dodging the rain and fishing. Choose upgrades, face rapid-fire challenges, and enjoy endless replayability!",
     "image": "/images/ItsAGameChanger.jpg",
     "imageAlt": "It's A Game Changer",
-    "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/"
+    "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/",
+    "tags": []
   },
   {
     "title": "Airlock Arena",
@@ -77,7 +86,8 @@
     "description": "Join forces with up to three buddies and navigate the grim perils of the cosmos together. Dodge treacherous asteroid fields, outsmart the authorities, and secure precious cargo. Survival is optional, profit is mandatory. Are you ready to risk it all for the ultimate haul?",
     "image": "/images/airlock_arena_logo.jpg",
     "imageAlt": "Airlock Arena & Purrseus",
-    "link": "https://store.steampowered.com/app/1111920/Airlock_Arena_Profit_or_Perish/"
+    "link": "https://store.steampowered.com/app/1111920/Airlock_Arena_Profit_or_Perish/",
+    "tags": []
   },
   {
     "title": "Narcalid",
@@ -85,7 +95,8 @@
     "description": "Narcalid is a puzzle platformer with peaceful exploration and mighty challenges in a strange, unknown world. Use real-life meditation skills in compelling spiritual narratives to open the gateway to Earth before Mother Narcalid becomes unstoppable!",
     "image": "/images/LotusMtn.png",
     "imageAlt": "Narcalid",
-    "link": "https://store.steampowered.com/app/2341110/Narcalid/?beta=0"
+    "link": "https://store.steampowered.com/app/2341110/Narcalid/?beta=0",
+    "tags": []
   },
   {
     "title": "Abalon",
@@ -93,7 +104,8 @@
     "description": "D20 Studios brings classic RPG vibes with modern twists, exemplified by their strategic and fantasy-rich game Abalon.",
     "image": "/images/abalon.png",
     "imageAlt": "Abalon",
-    "link": "https://d20studios.com/"
+    "link": "https://d20studios.com/",
+    "tags": []
   },
   {
     "title": "Table Top Creature Tracker",
@@ -101,7 +113,8 @@
     "description": "Roll for initiative! This is a lightweight and easy-to-use Game Master's companion tool that won't interrupt the flow of your tabletop roleplaying game, and holds everything you'll need to stay organized and focused on your game.",
     "image": "/images/TTCTgameImage.jpeg",
     "imageAlt": "Table Top Creature Tracker",
-    "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/"
+    "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/",
+    "tags": []
   },
   {
     "title": "Alpacalypse",
@@ -109,7 +122,8 @@
     "description": "Alpacalypse is a 2.5D action platformer where you control Pancake The Llama, fighting to rescue your wife, The Mrs. Kick and spit your way through hordes of alpacas, collecting coins, and platforming your way to victory.",
     "image": "/images/alpacalypse_logo.jpg",
     "imageAlt": "Alpacalypse",
-    "link": "https://store.steampowered.com/app/2325060/Alpacalypse/?curator_clanid=44282448"
+    "link": "https://store.steampowered.com/app/2325060/Alpacalypse/?curator_clanid=44282448",
+    "tags": []
   },
   {
     "title": "The Incredible Baron",
@@ -117,6 +131,7 @@
     "description": "The Incredible Baron combines real-time strategy gameplay with over 45 collectible animal species in a tale of exploration, science, and betrayal.",
     "image": "/images/TheIncredibleBaronHeader.jpg",
     "imageAlt": "The Incredible Baron",
-    "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/"
+    "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/",
+    "tags": []
   }
 ]
