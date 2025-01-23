@@ -56,12 +56,12 @@
     "link": "https://www.familiars.io/"
   },
   {
-    "title": "Moniker",
-    "developer": "Kogoy Galaxy",
-    "description": "Kogoy Galaxy creates interactive and innovative games that blur the lines between creativity and strategy.",
-    "image": "/images/Moniker.png",
-    "imageAlt": "Moniker",
-    "link": "https://kogoy.com/"
+    "title": "Virtuále",
+    "developer": "Neumont Game Studios",
+    "description": "A turn-based heist game where you get to mastermind your own high-profile job. Sneak, hack, and smash your way to riches in Virtuále: Heist Simulations!",
+    "image": "/images/virtuale_logo.jpg",
+    "imageAlt": "Virtuále",
+    "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/"
   },
   {
     "title": "It's A Game Changer",
@@ -72,12 +72,12 @@
     "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/"
   },
   {
-    "title": "Airlock Arena & Purrseus",
+    "title": "Airlock Arena",
     "developer": "Frostbane Studios",
-    "description": "A studio known for its action-packed games like Airlock Arena and the adorable Purrseus.",
-    "image": "/images/FrostBaneStudios.png",
+    "description": "Join forces with up to three buddies and navigate the grim perils of the cosmos together. Dodge treacherous asteroid fields, outsmart the authorities, and secure precious cargo. Survival is optional, profit is mandatory. Are you ready to risk it all for the ultimate haul?",
+    "image": "/images/airlock_arena_logo.jpg",
     "imageAlt": "Airlock Arena & Purrseus",
-    "link": "https://frostbane.com/"
+    "link": "https://store.steampowered.com/app/1111920/Airlock_Arena_Profit_or_Perish/"
   },
   {
     "title": "Narcalid",

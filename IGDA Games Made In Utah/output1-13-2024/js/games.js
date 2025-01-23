@@ -49,7 +49,7 @@ function showGames(games) {
 }
 
 function fetchGames() {
-    fetch("/data/games.json")
+    fetch("/data/game_list.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
