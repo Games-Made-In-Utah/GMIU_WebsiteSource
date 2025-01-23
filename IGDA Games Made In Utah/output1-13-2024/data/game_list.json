@@ -6,7 +6,7 @@
     "image": "/images/fortnite_logo.jpg",
     "imageAlt": "Fortnite",
     "link": "https://www.fortnite.com/download?lang=en-US",
-    "tags": []
+    "tags": ["Battle Royale", "Released", "AAA", "Free"]
   },
   {
     "title": "Snail Simulator",
@@ -15,7 +15,7 @@
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
     "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/",
-    "tags": []
+    "tags": ["RPG", "Released", "Indie", "Paid"]
   },
   {
     "title": "Hogwarts Legacy",
@@ -24,7 +24,7 @@
     "image": "/images/hogwarts_logo.jpg",
     "imageAlt": "Hogwarts Legacy",
     "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
-    "tags": []
+    "tags": ["RPG", "Released", "AAA", "Paid"]
   },
   {
     "title": "Annie and the AI",
@@ -33,7 +33,7 @@
     "image": "/images/annie_logo.jpg",
     "imageAlt": "Annie and the AI",
     "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/",
-    "tags": []
+    "tags": ["Puzzle", "Released", "Indie", "Paid"]
   },
   {
     "title": "Dino Mayhem",
@@ -42,7 +42,7 @@
     "image": "/images/dino_mayhem_logo.jpg",
     "imageAlt": "Dino Mayhem",
     "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/",
-    "tags": []
+    "tags": ["Arcade", "Early Access", "Indie", "Free"]
   },
   {
     "title": "Screamboat Willie",
@@ -51,16 +51,16 @@
     "image": "/images/screamboat_logo.jpg",
     "imageAlt": "Screamboat Willie",
     "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/",
-    "tags": []
+    "tags": ["Horror", "Released", "Indie", "Free"]
   },
   {
     "title": "Familiars.io",
-    "developer": "Familiars.io",
+    "developer": "Clay Loam",
     "description": "A unique online game where players collect and battle fantastical creatures known as Familiars.",
-    "image": "/images/Familiars.png",
+    "image": "/images/familiars_logo.jpg",
     "imageAlt": "Familiars.io",
-    "link": "https://www.familiars.io/",
-    "tags": []
+    "link": "https://store.steampowered.com/app/2619250/Familiarsio/",
+    "tags": ["RPG", "Released", "Indie", "Free"]
   },
   {
     "title": "Virtuále",
@@ -69,7 +69,7 @@
     "image": "/images/virtuale_logo.jpg",
     "imageAlt": "Virtuále",
     "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/",
-    "tags": []
+    "tags": ["Strategy", "Released", "Indie", "Free"]
   },
   {
     "title": "It's A Game Changer",
@@ -78,7 +78,7 @@
     "image": "/images/ItsAGameChanger.jpg",
     "imageAlt": "It's A Game Changer",
     "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/",
-    "tags": []
+    "tags": ["Roguelike", "Released", "Indie", "Free"]
   },
   {
     "title": "Airlock Arena",
@@ -87,7 +87,7 @@
     "image": "/images/airlock_arena_logo.jpg",
     "imageAlt": "Airlock Arena & Purrseus",
     "link": "https://store.steampowered.com/app/1111920/Airlock_Arena_Profit_or_Perish/",
-    "tags": []
+    "tags": ["Roguelike", "Early Access", "Indie", "Free"]
   },
   {
     "title": "Narcalid",
@@ -96,7 +96,7 @@
     "image": "/images/LotusMtn.png",
     "imageAlt": "Narcalid",
     "link": "https://store.steampowered.com/app/2341110/Narcalid/?beta=0",
-    "tags": []
+    "tags": ["Platformer", "Early Access", "Indie", "Paid"]
   },
   {
     "title": "Abalon",
@@ -104,8 +104,8 @@
     "description": "D20 Studios brings classic RPG vibes with modern twists, exemplified by their strategic and fantasy-rich game Abalon.",
     "image": "/images/abalon.png",
     "imageAlt": "Abalon",
-    "link": "https://d20studios.com/",
-    "tags": []
+    "link": "https://store.steampowered.com/app/1681840/Abalon_Roguelike_Tactics_CCG/",
+    "tags": ["Strategy", "Released", "Indie", "Paid"]
   },
   {
     "title": "Table Top Creature Tracker",
@@ -114,7 +114,7 @@
     "image": "/images/TTCTgameImage.jpeg",
     "imageAlt": "Table Top Creature Tracker",
     "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/",
-    "tags": []
+    "tags": ["RPG", "Early Access", "Indie", "Paid"]
   },
   {
     "title": "Alpacalypse",
@@ -123,7 +123,7 @@
     "image": "/images/alpacalypse_logo.jpg",
     "imageAlt": "Alpacalypse",
     "link": "https://store.steampowered.com/app/2325060/Alpacalypse/?curator_clanid=44282448",
-    "tags": []
+    "tags": ["Platformer", "Released", "Indie", "Free"]
   },
   {
     "title": "The Incredible Baron",
@@ -132,6 +132,6 @@
     "image": "/images/TheIncredibleBaronHeader.jpg",
     "imageAlt": "The Incredible Baron",
     "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/",
-    "tags": []
+    "tags": ["Strategy", "Released", "Indie", "Paid"]
   }
 ]
