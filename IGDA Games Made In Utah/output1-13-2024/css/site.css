@@ -49,11 +49,31 @@ body {
 
 .dropdown-content label {
     display: block;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.option {
+    color:#00ffff;
+    background-color:#0a0a0a;
+    border-color: #00ffff;
+    border-width: .1rem;
+    margin-right: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+}
+
+.checkbox {
+    background-color: #0a0a0a;
+    color: #00ffff;
+}
+
+input:checked {
+    background: #000;
 }
 
 /* Hero Section */
@@ -173,8 +193,6 @@ body {
     border-color: #ff00ff;
     color: #fff;
     font-weight: bold;
-  /* padding: 10px 20px; */
-  /* border-radius: 5px; */
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     letter-spacing: 1px;
