@@ -87,6 +87,7 @@ function filterGames(filter, type) {
             if (filter.length == 0) filters.push("");
             break;
         default:
+            filters = ["", "", "", ""];
             break;
     }
 
