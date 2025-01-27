@@ -6,7 +6,7 @@
     "image": "/images/fortnite_logo.jpg",
     "imageAlt": "Fortnite",
     "link": "https://www.fortnite.com/download?lang=en-US",
-    "tags": ["Battle Royale", "Released", "AAA", "Free"]
+    "tags": ["Released", "AAA", "Multiplayer", "Free", "Battle Royale"]
   },
   {
     "title": "Snail Simulator",
@@ -15,7 +15,7 @@
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
     "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/",
-    "tags": ["RPG", "Released", "Indie", "Paid"]
+    "tags": ["Released","Indie", "Multiplayer",  "Paid", "RPG"]
   },
   {
     "title": "Hogwarts Legacy",
@@ -24,7 +24,7 @@
     "image": "/images/hogwarts_logo.jpg",
     "imageAlt": "Hogwarts Legacy",
     "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
-    "tags": ["RPG", "Released", "AAA", "Paid"]
+    "tags": ["Released", "AAA", "Singleplayer", "Paid","RPG"]
   },
   {
     "title": "Annie and the AI",
@@ -33,7 +33,7 @@
     "image": "/images/annie_logo.jpg",
     "imageAlt": "Annie and the AI",
     "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/",
-    "tags": ["Puzzle", "Released", "Indie", "Paid"]
+    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Puzzle"]
   },
   {
     "title": "Dino Mayhem",
@@ -42,7 +42,7 @@
     "image": "/images/dino_mayhem_logo.jpg",
     "imageAlt": "Dino Mayhem",
     "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/",
-    "tags": ["Arcade", "Early Access", "Indie", "Free"]
+    "tags": ["Early Access", "Indie", "Singleplayer", "Free", "Arcade"]
   },
   {
     "title": "Screamboat Willie",
@@ -51,7 +51,7 @@
     "image": "/images/screamboat_logo.jpg",
     "imageAlt": "Screamboat Willie",
     "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/",
-    "tags": ["Horror", "Released", "Indie", "Free"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Horror"]
   },
   {
     "title": "Familiars.io",
@@ -60,7 +60,7 @@
     "image": "/images/familiars_logo.jpg",
     "imageAlt": "Familiars.io",
     "link": "https://store.steampowered.com/app/2619250/Familiarsio/",
-    "tags": ["RPG", "Released", "Indie", "Free"]
+    "tags": ["Released","Indie", "Multiplayer", "Free", "RPG"]
   },
   {
     "title": "Virtuále",
@@ -69,7 +69,7 @@
     "image": "/images/virtuale_logo.jpg",
     "imageAlt": "Virtuále",
     "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/",
-    "tags": ["Strategy", "Released", "Indie", "Free"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Strategy"]
   },
   {
     "title": "It's A Game Changer",
@@ -78,7 +78,7 @@
     "image": "/images/ItsAGameChanger.jpg",
     "imageAlt": "It's A Game Changer",
     "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/",
-    "tags": ["Roguelike", "Released", "Indie", "Free"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Roguelike"]
   },
   {
     "title": "Airlock Arena",
@@ -87,7 +87,7 @@
     "image": "/images/airlock_arena_logo.jpg",
     "imageAlt": "Airlock Arena & Purrseus",
     "link": "https://store.steampowered.com/app/1111920/Airlock_Arena_Profit_or_Perish/",
-    "tags": ["Roguelike", "Early Access", "Indie", "Free"]
+    "tags": ["Early Access", "Indie", "Multiplayer", "Free", "Roguelike"]
   },
   {
     "title": "Narcalid",
@@ -96,7 +96,7 @@
     "image": "/images/LotusMtn.png",
     "imageAlt": "Narcalid",
     "link": "https://store.steampowered.com/app/2341110/Narcalid/?beta=0",
-    "tags": ["Platformer", "Early Access", "Indie", "Paid"]
+    "tags": ["Early Access", "Indie", "Multiplayer", "Paid", "Platformer"]
   },
   {
     "title": "Abalon",
@@ -105,7 +105,7 @@
     "image": "/images/abalon.png",
     "imageAlt": "Abalon",
     "link": "https://store.steampowered.com/app/1681840/Abalon_Roguelike_Tactics_CCG/",
-    "tags": ["Roguelike", "Released", "Indie", "Paid"]
+    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Roguelike"]
   },
   {
     "title": "Table Top Creature Tracker",
@@ -114,7 +114,7 @@
     "image": "/images/TTCTgameImage.jpeg",
     "imageAlt": "Table Top Creature Tracker",
     "link": "https://store.steampowered.com/app/3013280/Table_Top_Creature_Tracker/",
-    "tags": ["RPG", "Early Access", "Indie", "Paid"]
+    "tags": ["Early Access", "Indie", "Singleplayer", "Paid", "RPG"]
   },
   {
     "title": "Alpacalypse",
@@ -123,7 +123,7 @@
     "image": "/images/alpacalypse_logo.jpg",
     "imageAlt": "Alpacalypse",
     "link": "https://store.steampowered.com/app/2325060/Alpacalypse/?curator_clanid=44282448",
-    "tags": ["Platformer", "Released", "Indie", "Free"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Platformer"]
   },
   {
     "title": "The Incredible Baron",
@@ -132,6 +132,6 @@
     "image": "/images/TheIncredibleBaronHeader.jpg",
     "imageAlt": "The Incredible Baron",
     "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/",
-    "tags": ["Strategy", "Released", "Indie", "Paid"]
+    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Strategy"]
   }
 ]
