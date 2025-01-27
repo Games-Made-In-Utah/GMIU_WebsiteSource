@@ -46,7 +46,7 @@
                     <form style="margin-bottom: 2rem;">
                         <ul class="ul-horizontal" style="padding-left: 0%;" >
                             <li>
-                                <select class="option" name="releaseType" id="releaseType">
+                                <select class="option" name="releaseType" id="releaseType" onchange="filterGames(this.value, 'release')">
                                     <option value="">Release Type</option>
                                     <option value="Unreleased">Unreleased</option>
                                     <option value="Early Access">Early Access</option>
@@ -54,14 +54,14 @@
                                 </select>
                             </li>
                             <li>
-                                <select class="option" name="publisherType" id="publisherType">
+                                <select class="option" name="publisherType" id="publisherType" onchange="filterGames(this.value, 'publisher')">
                                     <option value="">Publisher Type</option>
                                     <option value="AAA">AAA</option>
                                     <option value="Indie">Indie</option>
                                 </select>
                             </li>
                             <li>
-                                <select class="option" name="price" id="price">
+                                <select class="option" name="price" id="price" onchange="filterGames(this.value, 'price')">
                                     <option class="option" value="">Price</option>
                                     <option value="Free">Free</option>
                                     <option value="Paid">Paid</option>
@@ -130,6 +130,7 @@
         document.querySelector('.dropdown button').addEventListener('click', function()
         {
             console.log(getSelectedGenres());
+            filterGames(getSelectedGenres(), "genre");
         });
     </script>
 
