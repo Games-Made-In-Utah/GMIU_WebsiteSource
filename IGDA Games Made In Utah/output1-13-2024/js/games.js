@@ -86,6 +86,8 @@ function filterGames(filter, type) {
             for (g in filter) filters.push(filter[g]);
             if (filter.length == 0) filters.push("");
             break;
+        case "player":
+            filter[4] = filter
         default:
             filters = ["", "", "", ""];
             break;
