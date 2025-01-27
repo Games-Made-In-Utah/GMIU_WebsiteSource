@@ -43,9 +43,56 @@
                 <h2 class="text-center my-4 text-glow">Game Collection</h2>
                 <p class="text-center mb-5 lead text-neon">Try a few of the many Utah made games!</p>
 
-                <div>
-                    <!-- <label class="filter" for="filter">Filter: </label> -->
+                <div class="container">
+                    
+                        <ul class="ul-horizontal">
+                            <li>
+                                <select name="releaseType" id="releaseType">
+                                    <option value="">Release Type</option>
+                                    <option value="Unreleased">Unreleased</option>
+                                    <option value="Early Access">Early Access</option>
+                                    <option value="Released">Released</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="publisherType" id="publisherType">
+                                    <option value="">Publisher Type</option>
+                                    <option value="AAA">AAA</option>
+                                    <option value="Indie">Indie</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="price" id="price">
+                                    <option value="">Price</option>
+                                    <option value="Free">Free</option>
+                                    <option value="Paid">Paid</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button>Select Genre(s)</button>
+                                    <div class="dropdown-content">
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Arcade"> Arcade</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Battle Royale"> Battle Royale</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Horror"> Horror</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Platformer"> Platformer</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Puzzle"> Puzzle</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Roguelike"> Roguelike</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="RPG"> RPG</label>
+                                        <label style="color: black;">&nbsp;<input type="checkbox" value="Strategy"> Strategy</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <input type="reset" class="btn-primary" value="Reset Filters" />
+                                    
+                                </li>
+                            </ul>
+                        
+                    </div>
 
+                        <div>
+                            <!-- <label class="filter" for="filter">Filter: </label> -->
                     <select class="filter mb-5" name="filter" id="filter" onchange="filterGames(this)">
                         <option value="">Filter by</option>
                         <option value="AAA">AAA</option>
@@ -91,6 +138,28 @@
 
 
     <script src="/js/games.js"></script>
+
+    <!-- Grab Selected Filters -->
+    <script>
+        function getSelectedGenres() 
+        {
+            var checkboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]')
+            var selectedGenres = [];
+            checkboxes.forEach(function(checkbox)
+            {
+                if (checkbox.checked)
+                {
+                    selectedGenres.push(checkbox.value);
+                }
+            });
+            return selectedGenres;
+        }
+
+        document.querySelector('.dropdown button').addEventListener('click', function()
+        {
+            console.log(getSelectedGenres());
+        });
+    </script>
 
 
     <!-- Visual Studio Browser Link -->
