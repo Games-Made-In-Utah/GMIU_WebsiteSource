@@ -1,7 +1,7 @@
 ﻿// Credits to https://www.geeksforgeeks.org/read-json-file-using-javascript/ & https://stackoverflow.com/questions/18238173/javascript-loop-through-json-array
 // BIG thanks for the help!
 
-var filters = ["", "", "", ""];
+var filters = ["", "", "", "", ""];
 var gameData = null;
 
 function stringToHTML(text) {
@@ -42,18 +42,20 @@ function showGames(games) {
                 image.setAttribute("alt", game.imageAlt);
                 link.setAttribute("href", game.link);
 
-                if (filters[0] == "" && filters[1] == "" && filters[2] == "" && filters[3] == "") { collection.append(html); }
+                if (filters[0] == "" && filters[1] == "" && filters[2] == "" && filters[3] == "" && filters[4] == "") { collection.append(html); }
                 else {
                     var releaseCheck = (filters[0] == "");
                     var publisherCheck = (filters[1] == "");
-                    var priceCheck = (filters[2] == "");
-                    var genreCheck = (filters[3] == "");
+                    var playerCheck = (filters[2] == "");
+                    var priceCheck = (filters[3] == "");
+                    var genreCheck = (filters[4] == "");
 
                     if (releaseCheck == false) for (x in game.tags) if (filters[0].toLowerCase() == game.tags[x].toLowerCase()) { releaseCheck = true; break; }
                     if (publisherCheck == false) for (x in game.tags) if (filters[1].toLowerCase() == game.tags[x].toLowerCase()) { publisherCheck = true; break; }
-                    if (priceCheck == false) for (x in game.tags) if (filters[2].toLowerCase() == game.tags[x].toLowerCase()) { priceCheck = true; break; }
+                    if (playerCheck == false) for (x in game.tags) if (filters[2].toLowerCase() == game.tags[x].toLowerCase()) { playerCheck = true; break; }
+                    if (priceCheck == false) for (x in game.tags) if (filters[3].toLowerCase() == game.tags[x].toLowerCase()) { priceCheck = true; break; }
                     if (genreCheck == false) {
-                        var genres = filters.slice(3);
+                        var genres = filters.slice(4);
 
                         for (g in genres) {
                             genreCheck = false;
@@ -62,7 +64,7 @@ function showGames(games) {
                         }
                     }
 
-                    if (releaseCheck == true && publisherCheck == true && priceCheck == true && genreCheck == true) collection.append(html);
+                    if (releaseCheck == true && publisherCheck == true && playerCheck == true && priceCheck == true && genreCheck == true) collection.append(html);
                 }
             })
             .catch((error) =>
@@ -78,18 +80,19 @@ function filterGames(filter, type) {
         case "publisher":
             filters[1] = filter;
             break;
-        case "price":
+        case "player":
             filters[2] = filter;
             break;
+        case "price":
+            filters[3] = filter;
+            break;
         case "genre":
-            filters = filters.slice(0, 3);
+            filters = filters.slice(0, 4);
             for (g in filter) filters.push(filter[g]);
             if (filter.length == 0) filters.push("");
             break;
-        case "player":
-            filter[4] = filter
         default:
-            filters = ["", "", "", ""];
+            filters = ["", "", "", "", ""];
             break;
     }
 
