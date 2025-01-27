@@ -1,7 +1,7 @@
 ﻿// Credits to https://www.geeksforgeeks.org/read-json-file-using-javascript/ & https://stackoverflow.com/questions/18238173/javascript-loop-through-json-array
 // BIG thanks for the help!
 
-var filter = "";
+var filters = [""];
 var gameData = null;
 
 function stringToHTML(text) {
@@ -42,14 +42,23 @@ function showGames(games) {
                 image.setAttribute("alt", game.imageAlt);
                 link.setAttribute("href", game.link);
 
-                if (filter == "") { collection.append(html); }
+                if (filters[0] == "") { collection.append(html); }
                 else {
-                    for (x in game.tags) {
-                        if (game.tags[x].toLowerCase() == filter.toLowerCase()) {
-                            collection.append(html);
-                            break;
+                    var shown = false;
+
+                    for (i in filters) {
+                        for (x in game.tags) {
+                            if (game.tags[x].toLowerCase() == filters[i].toLowerCase()) {
+                                shown = true;
+                                break;
+                            }
+                            else shown = false;
                         }
+
+                        if (shown == false) break;
                     }
+
+                    if (shown == true) collection.append(html);
                 }
             })
             .catch((error) =>
@@ -58,7 +67,9 @@ function showGames(games) {
 }
 
 function filterGames(selection) {
-    filter = selection.value;
+    if (selection.value == "") filters = [""];
+    else { filters = []; filters.push(selection.value); }
+    console.log(filters[0])
     showGames(gameData);
 }
 
