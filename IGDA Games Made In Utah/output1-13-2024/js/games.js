@@ -1,7 +1,7 @@
 ﻿// Credits to https://www.geeksforgeeks.org/read-json-file-using-javascript/ & https://stackoverflow.com/questions/18238173/javascript-loop-through-json-array
 // BIG thanks for the help!
 
-var filters = ["", "", "", ""];
+var filters = ["", "", "", "", ""];
 var gameData = null;
 
 function stringToHTML(text) {
