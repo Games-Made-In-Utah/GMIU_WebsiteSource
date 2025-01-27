@@ -47,7 +47,7 @@
                     <form>
                         <ul class="ul-horizontal">
                             <li>
-                                <select name="releaseType" id="releaseType">
+                                <select name="releaseType" id="releaseType" onchange="filterGames(this.value, 'release')">
                                     <option value="">Release Type</option>
                                     <option value="Unreleased">Unreleased</option>
                                     <option value="Early Access">Early Access</option>
@@ -55,14 +55,14 @@
                                 </select>
                             </li>
                             <li>
-                                <select name="publisherType" id="publisherType">
+                                <select name="publisherType" id="publisherType" onchange="filterGames(this.value, 'publisher')">
                                     <option value="">Publisher Type</option>
                                     <option value="AAA">AAA</option>
                                     <option value="Indie">Indie</option>
                                 </select>
                             </li>
                             <li>
-                                <select name="price" id="price">
+                                <select name="price" id="price" onchange="filterGames(this.value, 'price')">
                                     <option value="">Price</option>
                                     <option value="Free">Free</option>
                                     <option value="Paid">Paid</option>
@@ -81,33 +81,13 @@
                                         <label style="color: black;">&nbsp;<input type="checkbox" value="RPG"> RPG</label>
                                         <label style="color: black;">&nbsp;<input type="checkbox" value="Strategy"> Strategy</label>
                                     </div>
-                                </li>
-                                <li>
-                                    <input type="reset" class="btn-primary" value="Reset Filters" />
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-
-                        <div>
-                            <!-- <label class="filter" for="filter">Filter: </label> -->
-                    <select class="filter mb-5" name="filter" id="filter" onchange="filterGames(this)">
-                        <option value="">Filter by</option>
-                        <option value="AAA">AAA</option>
-                        <option value="Arcade">Arcade</option>
-                        <option value="Battle Royale">Battle Royale</option>
-                        <option value="Early Access">Early Access</option>
-                        <option value="Free">Free</option>
-                        <option value="Horror">Horror</option>
-                        <option value="Indie">Indie</option>
-                        <option value="Paid">Paid</option>
-                        <option value="Platformer">Platformer</option>
-                        <option value="Puzzle">Puzzle</option>
-                        <option value="Released">Released</option>
-                        <option value="Roguelike">Roguelike</option>
-                        <option value="RPG">RPG</option>
-                        <option value="Strategy">Strategy</option>
-                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="reset" class="btn-primary" value="Reset Filters" />
+                            </li>
+                        </ul>
+                    </form>
                 </div>
 
                 <div id="games" class="row"></div>
@@ -156,6 +136,7 @@
         document.querySelector('.dropdown button').addEventListener('click', function()
         {
             console.log(getSelectedGenres());
+            filterGames(getSelectedGenres(), "genre");
         });
     </script>
 
