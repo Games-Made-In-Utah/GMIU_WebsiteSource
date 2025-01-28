@@ -28,7 +28,7 @@ This project is the Games Made in Utah website, built with ASP.NET Core MVC and 
 
 Download the "Live Server" extension by Ritwick Dey from the VSCode tab, Ctrl+Shift+X, if installed:
 
-- Rick click index.html file to "Open with Live Server", Alt+L+O, and view website.
+- Right click the index.html file to "Open with Live Server", Alt+L+O, and view the website.
 
 ## Deploying to Netlify
 
