@@ -30,7 +30,7 @@ Download the "Live Server" extension by Ritwick Dey from the VSCode tab, Ctrl+Sh
 
 - Rick click index.html file to "Open with Live Server", Alt+L+O, and view website.
 
-### Deploying to Netlify
+## Deploying to Netlify
 
 ### Step 1: Navigate to Netlify
 
