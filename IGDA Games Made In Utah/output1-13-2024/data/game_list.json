@@ -6,7 +6,7 @@
     "image": "/images/fortnite_logo.jpg",
     "imageAlt": "Fortnite",
     "link": "https://www.fortnite.com/download?lang=en-US",
-    "tags": ["Released", "AAA", "Multiplayer", "Free", "Battle Royale"]
+    "tags": ["Released", "AAA", "Multiplayer", "Free", "Battle Royale", "3D", "Adventure"]
   },
   {
     "title": "Snail Simulator",
@@ -15,7 +15,7 @@
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
     "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/",
-    "tags": ["Released","Indie", "Multiplayer",  "Paid", "RPG"]
+    "tags": ["Released","Indie", "Multiplayer",  "Paid", "RPG", "Adventure", "3D"]
   },
   {
     "title": "Hogwarts Legacy",
@@ -24,7 +24,7 @@
     "image": "/images/hogwarts_logo.jpg",
     "imageAlt": "Hogwarts Legacy",
     "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
-    "tags": ["Released", "AAA", "Singleplayer", "Paid","RPG"]
+    "tags": ["Released", "AAA", "Singleplayer", "Paid","RPG", "Adventure", "Strategy", "3D"]
   },
   {
     "title": "Annie and the AI",
@@ -33,7 +33,7 @@
     "image": "/images/annie_logo.jpg",
     "imageAlt": "Annie and the AI",
     "link": "https://store.steampowered.com/app/2084460/Annie_and_the_AI/",
-    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Puzzle"]
+    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Puzzle", "2D"]
   },
   {
     "title": "Dino Mayhem",
@@ -42,7 +42,7 @@
     "image": "/images/dino_mayhem_logo.jpg",
     "imageAlt": "Dino Mayhem",
     "link": "https://store.steampowered.com/app/2614930/Dino_Mayhem/",
-    "tags": ["Early Access", "Indie", "Singleplayer", "Free", "Arcade"]
+    "tags": ["Early Access", "Indie", "Singleplayer", "Free", "Arcade", "2D"]
   },
   {
     "title": "Screamboat Willie",
@@ -51,7 +51,7 @@
     "image": "/images/screamboat_logo.jpg",
     "imageAlt": "Screamboat Willie",
     "link": "https://store.steampowered.com/app/2809510/Screamboat_Willie/",
-    "tags": ["Released", "Indie", "Singleplayer", "Free", "Horror"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Horror", "3D"]
   },
   {
     "title": "Familiars.io",
@@ -60,7 +60,7 @@
     "image": "/images/familiars_logo.jpg",
     "imageAlt": "Familiars.io",
     "link": "https://store.steampowered.com/app/2619250/Familiarsio/",
-    "tags": ["Released","Indie", "Multiplayer", "Free", "RPG"]
+    "tags": ["Released","Indie", "Multiplayer", "Free", "RPG", "2D", "Adventure", "Strategy"]
   },
   {
     "title": "Virtuále",
@@ -69,7 +69,7 @@
     "image": "/images/virtuale_logo.jpg",
     "imageAlt": "Virtuále",
     "link": "https://store.steampowered.com/app/3138980/Virtule_Heist_Simulations/",
-    "tags": ["Released", "Indie", "Singleplayer", "Free", "Strategy"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "Strategy", "Turn Based", "3D"]
   },
   {
     "title": "It's A Game Changer",
