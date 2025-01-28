@@ -15,7 +15,7 @@
     "image": "/images/SnailSimulator.png",
     "imageAlt": "Snail Simulator",
     "link": "https://store.steampowered.com/app/1500740/Snail_Simulator/",
-    "tags": ["Released","Indie", "Multiplayer",  "Paid", "RPG", "Adventure", "3D"]
+    "tags": ["Released","Indie", "Multiplayer", "Paid", "RPG", "Adventure", "3D"]
   },
   {
     "title": "Hogwarts Legacy",
@@ -24,7 +24,7 @@
     "image": "/images/hogwarts_logo.jpg",
     "imageAlt": "Hogwarts Legacy",
     "link": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
-    "tags": ["Released", "AAA", "Singleplayer", "Paid","RPG", "Adventure", "Strategy", "3D"]
+    "tags": ["Released", "AAA", "Singleplayer", "Paid", "RPG", "Adventure", "Strategy", "3D"]
   },
   {
     "title": "Annie and the AI",
@@ -78,7 +78,7 @@
     "image": "/images/ItsAGameChanger.jpg",
     "imageAlt": "It's A Game Changer",
     "link": "https://store.steampowered.com/app/2888690/Its_A_Game_Changer/",
-    "tags": ["Released", "Indie", "Singleplayer", "Free", "3D", "Roguelike", "Platformer"]
+    "tags": ["Released", "Indie", "Singleplayer", "Free", "2D", "3D", "Roguelike", "Platformer"]
   },
   {
     "title": "Airlock Arena",
@@ -132,6 +132,6 @@
     "image": "/images/TheIncredibleBaronHeader.jpg",
     "imageAlt": "The Incredible Baron",
     "link": "https://store.steampowered.com/app/441510/The_Incredible_Baron/",
-    "tags": ["Released", "Indie", "Singleplayer", "Paid", "Strategy", "Adventure"]
+    "tags": ["Released", "Indie", "Singleplayer", "Paid", "2D", "Strategy", "Adventure"]
   }
 ]
