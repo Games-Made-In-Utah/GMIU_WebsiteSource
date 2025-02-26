@@ -43,8 +43,8 @@
                 <h2 class="text-center my-4 text-glow">Game Collection</h2>
                 <p class="text-center mb-5 lead text-neon">Try a few of the many Utah made games!</p>
                 <hr class="my-4 glow-line">
-                    <form style="height: 3.2rem;">
-                        <ul class="ul-horizontal" style="padding-left: 0%;" >
+                    <form>
+                        <ul class="ul-horizontal">
                             <li>
                                 <select class="option" name="releaseType" id="releaseType" onchange="filterGames(this.value, 'release')">
                                     <option value="">Release Type</option>
@@ -76,7 +76,7 @@
                             </li>
                             <li>
                                 <div class="dropdown">
-                                    <button type="button" class="option" style="height: 3.25rem;">Select Genre(s)</button>
+                                    <button type="button" class="option" style="width: 10.3rem;">Select Genre(s)</button>
                                     <div class="dropdown-content">
                                         <label>&nbsp;<input onchange="filterGames(getSelectedGenres(), 'genre')" type="checkbox" value="2D"> 2D</label>
                                         <label>&nbsp;<input onchange="filterGames(getSelectedGenres(), 'genre')" type="checkbox" value="3D"> 3D</label>
@@ -93,8 +93,10 @@
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <input onclick="filterGames(0,'clear')" type="reset" class="btn-primary" style="height: 3.5rem;" value="Reset Filters" />
+                            </li>
                         </ul>
-                        <input onclick="filterGames(0,'clear')" style="float: right;" type="reset" class="btn-primary" value="Reset Filters" />
                     </form>
                 <hr class="my-4 glow-line">
                 <div id="games" class="row"></div>

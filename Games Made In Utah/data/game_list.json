@@ -9,6 +9,24 @@
     "tags": ["Released","Indie", "Multiplayer", "Paid", "RPG", "Adventure", "3D"]
   },
   {
+    "title": "Animal Jam",
+    "developer": "WildWorks",
+    "description": "Become your favorite animal and explore Jamaa! All the animals live in the virtual world of Jamaa, a tropical wonderland full of other animals looking to play games, have fun, chat and make friends, too!",
+    "image": "/images/animal_jam.jpg",
+    "imageAlt": "Animal Jam",
+    "link": "https://www.animaljam.com/en",
+    "tags": ["Released","Indie", "Multiplayer", "Free", "RPG", "Adventure", "3D"]
+  },
+  {
+    "title": "DubWars",
+    "developer": "MURA Interactive",
+    "description": "Your weapons are synced to the music creating times of intense weapon load outs and calm moments where your survival skills are tested.",
+    "image": "/images/dubwars.jpg",
+    "imageAlt": "DubWars",
+    "link": "https://store.steampowered.com/app/290000/DubWars/",
+    "tags": ["Released","Indie", "Singleplayer", "Paid", "Arcade", "Strategy", "2D"]
+  },
+  {
     "title": "Annie and the AI",
     "developer": "NoSleepGames LLC",
     "description": "Step into the role of Esme, an AI built by Annie but built for what purpose? Evolve and learn by solving visual puzzles accompanied by beautiful hand-drawn artwork. Learn all about Annie's life, befriend her, and grow together.",
